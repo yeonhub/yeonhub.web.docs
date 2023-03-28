@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <style>
+        /* div 공통 */
+        div{width: 100px;
+            height: 100px;
+            background-color: darksalmon;
+            margin: 20px;
+        }
+        .box1 {}
+        .box2 {padding: 20px;}
+        .box3 {padding: 20px; box-sizing: border-box;}
+        .box4 {padding: 20px; box-sizing: content-box;}
+    </style>
+</head>
+<body>
+
+    <!-- div.box$*4 -->
+    <div class="box1">test1</div>
+    <div class="box2">test2</div>
+    <div class="box3">test3</div>
+    <div class="box4">test4</div>
+    <pre>
+        padding : 컨텐츠 너비와 높이가 변경됨
+
+        ex)
+        너비 100px, 높이 100px 디자인 상
+        padding : 20px -> 총 너비=20+100+20=140px
+        
+        box-sizing : border-box
+        너비와 높이 안에 (100/100) padding, border를 포함
+
+
+    </pre>
+    
+</body>
+</html>

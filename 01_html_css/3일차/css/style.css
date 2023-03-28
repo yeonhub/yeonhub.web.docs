@@ -1,0 +1,6 @@
+div {background-color: aqua;}
+div h2 {font-size: 50px; background-color: coral;}
+div h2 ul {}
+div h2 ul li {background-color: cornflowerblue;}
+div+p{background-color: chartreuse;}
+p {background-color: navajowhite;}

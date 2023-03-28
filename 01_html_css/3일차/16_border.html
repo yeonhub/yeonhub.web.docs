@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <style>
+        div {
+            width: 200px;
+            height: 100px;
+            margin: 20px;
+            padding: 10px;
+            background-color: aquamarine;
+        }
+        .box1 {
+            border-top: 2px solid red;
+            border-right: 5px dotted pink;
+            border-bottom: 8px dashed teal;
+            /* padding, border : 박스크기에 영향을 준다 */
+            box-sizing: border-box;
+        }
+        .box2 {
+            border: 2px solid royalblue;
+        }
+        .box3 {
+            border-top: 3px solid rebeccapurple;
+            border-right: 3px solid rebeccapurple;
+            border-left: 3px solid rebeccapurple;
+            /* 하나씩 넣는게 정석 */
+        }
+        .box4 {
+            border: 5px solid khaki;
+            border-bottom: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">test1</div>
+    <div class="box2">test2</div>
+    <div class="box3">test3</div>
+    <div class="box4">test4</div>
+    <pre>
+        border : 테두리
+        border-top : 크기 스타일 색;
+        border-rignt : 크기 스타일 색;
+        border-bottom : 크기 스타일 색;
+        border-left : 크기 스타일 색;
+
+        속기법
+        border : 크기 스타일 색
+
+        스타일
+        solid : 실선
+        dotted : 점선
+        dashed : 긴 점선
+        node : 선 제거
+
+        ex) border-top : none;
+
+        border-width:너비
+        border-style:solid
+        border-color:색
+    </pre>
+    
+</body>
+</html>
