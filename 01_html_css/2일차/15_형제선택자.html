@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <!-- link:css -->
+    <link rel="stylesheet" href="css/reset.css">
+    <style>
+        div {}
+
+        div h2 {}
+
+        div ul {}
+
+        div ul li {}
+
+        article {}
+
+        article dl {}
+
+        article dl dt {
+            background-color: pink;
+        }
+
+        article dl dd {
+            background-color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div>
+        <h2>제목2</h2>
+        <ul>
+            <li>list1</li>
+            <li>list2</li>
+            <li>list3</li>
+            <li>list4</li>
+        </ul>
+    </div>
+
+
+    <p>Lorem ipsum dolor sit.</p>
+
+    <article>
+        <dl>
+            <dt>용어1</dt>
+            <dd>설명1</dd>
+            <dd>설명2</dd>
+            <dd>설명3</dd>
+            <dd>설명4</dd>
+            <dd>설명5</dd>
+            <dd>설명6</dd>
+        </dl>
+    </article>
+
+
+
+    <pre>
+        ///////////////////////////
+
+        형제 선택자
+        + : 형제 선택자 바로 아래 1개만 선택 (많이 사용)
+            경로+요소{}
+            a b c + d {} (c 바로 밑에 있는 d) d는 경로를 작성하지 X
+
+            <a>
+                <b>
+                    <c>제목</c>
+                    <d>형제1</d>
+                    <e>형제2</e>
+                </b>
+
+            </a>
+    </pre>
+
+</body>
+
+</html>
