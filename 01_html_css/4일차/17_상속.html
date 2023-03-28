@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <style>
+        .box {
+            background-color: blanchedalmond;
+            width: 300px; 
+            height: 150px;
+            border: 1px solid green;
+            margin: 20px;
+            padd: 20px;
+            /* h2, span, p로상속 안됨 박스(부모)만 적용 */
+            
+            font-size: 20px;
+            font-weight: 700;
+            color: brown;
+            text-align: center;
+        }
+        .box a {color: red; text-decoration: none;}
+        /* a 만 따로 스타일 부여(상속 안되기 때문에) */
+    </style>
+</head>
+<body>
+     <div class="box">
+        <h2>제목: <span>이젠</span></h2>
+        <div>
+            <p>테스트</p>
+            <a href="#">네이버</a>
+            <!-- a 는 color 상속 안됨 -->
+        </div>
+     </div>
+    <pre>
+        ------------------
+        상속 : 부모 요소가 자식, 자손에도 속성이 적용된다
+
+        상속 안되는 것 : margin, padding, height, width, boder, 배경처리, 위치
+        
+    </pre>
+</body>
+</html>

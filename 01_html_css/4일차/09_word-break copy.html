@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <style>
+        .box {
+            width: 400px;
+            border: 1px solid black;
+            margin: 20px;
+            font-size: 20px;
+        }
+        .box1 {
+            /* word-break: break-all; 영어는 끊어지지 않게 keep-all 사용 */
+            word-break: keep-all;
+        }
+        .box2 {
+            word-break: keep-all;
+        }
+    </style>
+</head>
+<body>
+     <div class="box box1">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis error natus et, assumenda laudantium laboriosam doloribus corrupti consequatur dolore aliquam odio quam obcaecati nostrum. Culpa est asperiores fugiat labore sequi.
+     </div>
+
+    <div class="box box2">
+        겨울이 위에 별 마디씩 가슴속에 까닭이요, 어머님, 봅니다. 걱정도 이름자 별 별이 까닭이요, 별 멀듯이, 있습니다. 청춘이 옥 이름과, 파란 보고, 시와 흙으로 경, 버리었습니다. 가슴속에 애기 때 당신은 멀듯이, 까닭입니다.
+    </div>
+    <pre>
+        ------------------
+        word-break: break-all;
+        word-break: keep-all;
+    </pre>
+</body>
+</html>

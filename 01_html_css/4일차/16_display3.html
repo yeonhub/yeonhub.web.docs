@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <style>
+        .list {font-size: 0;
+            margin: 30px;
+            width: 600px;
+        }
+        .list li {
+            display: inline-block;
+            width: 150px;
+            height: 150px;
+            border: 5px solid black;
+            text-align: center;
+            line-height: 150px;
+            /* 나열한 박스 border 겹침 문제 해결 */
+            margin-left: -5px;
+            background-color: white;
+        }
+        .list li strong {
+            border: 1px solid green;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+     <ul class="list">
+        <li><strong>타이틀1</strong></li>
+        <li><strong>타이틀2</strong></li>
+        <li class="last"><strong>타이틀3</strong></li>
+     </ul>
+    <pre>
+        ------------------
+        display : inline-block
+        1. 인라인 처럼 옆으로 나열
+        2. 블럭 처럼 너비/높이/패딩/마진 모두 사용 가능
+        3. 사이 간격 없애기 : 부모 font-size:0 변경 후 자신의 폰트 크기 변경
+    </pre>
+</body>
+</html>

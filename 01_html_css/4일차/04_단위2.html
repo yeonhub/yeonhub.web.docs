@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <style>
+        body {
+            font-size: 50px;
+            /* 하위 자식, 자손은 상속 */
+        }
+        /* 부모(body) 크기의 100% */
+        .box2 { font-size: 80%;}
+        /* 부모(box1) 크기의 80% */
+        .box3 { font-size: 80%;}
+        .box4 { font-size: 80%;}
+        .box5 { font-size: 80%;}
+    
+    </style>
+</head>
+<body>
+     <div class="box box1">
+        안녕하세요1
+        <div class="box box2">
+            안녕하세요2
+            <div class="box box3">
+                안녕하세요3
+                <div class="box box4">
+                    안녕하세요4
+                    <div class="box box5">
+                        안녕하세요5
+                     </div>
+                 </div>
+             </div>
+         </div>
+     </div>
+    <pre>
+        ------------------
+
+    </pre>
+</body>
+</html>

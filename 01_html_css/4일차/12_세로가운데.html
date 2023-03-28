@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <style>
+        .box {
+            width: 200px;
+            height: 100px;
+            border: 1px solid black;
+            margin: 30px;
+            font-size: 20px;
+            text-align: center;
+        }
+        .box1 {
+            /* 한 줄만 세로로 가운데 정렬 : line-height:박스 높이/2 */
+            line-height: 100px;
+
+        }
+        .box2 {
+            /* 여러줄인 경우 padding 사용 */
+            padding-top: 20px;
+            box-sizing: border-box;
+            width: 250px;
+            word-break: keep-all;
+        }
+        .box3 {
+            padding-top: 38px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+     <div class="box box1">
+        내용
+     </div>
+     <div class="box box2">
+        오늘은 수요일 입니다
+        오늘은 수요일 입니다
+     </div>
+     <div class="box box3">
+        내용
+     </div>
+    <pre>
+        ------------------
+
+    </pre>
+</body>
+</html>
