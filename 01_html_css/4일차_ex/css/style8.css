@@ -1,0 +1,43 @@
+.con-box {
+    width: 100%;
+    /* 100%는 어던 브라우저, 해상도가 오든 대응 */
+    height: 150px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+.inner {
+    width: 1090px;
+    /* inner 박스 너비 */
+    padd: 35px 0;
+    /* 위아래 35 좌우 0 */
+    margin: auto;
+    /* margin : auto 로 가운데 정렬 밑으로 떨어지게 */
+}
+.inner h2, strong, h3 {
+    text-align: center;
+    /* h2, strong, h3 가운데 정렬 */
+}
+.inner h2 {
+    font-size: 18px;
+    font-weight: 100;
+    color:red;
+    padding-bottom: 10px;
+    margin-bottom: 40px;
+}
+.inner h2 span {
+    border-bottom: 1px solid red;
+}
+.inner strong {
+    display: block;
+    margin-bottom: 10px;
+}
+.inner h3 {
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 1.3;
+    margin-bottom: 50px;
+}
+.inner p {
+    margin-bottom: 20px;
+}

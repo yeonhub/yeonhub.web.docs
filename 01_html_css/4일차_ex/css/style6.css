@@ -1,0 +1,26 @@
+/* box1과 box2의 공통부분 */
+.box {width: 310px; height: 410px; background-color: #efefef; padding: 20px 25px; box-sizing: border-box; margin:50px auto}
+
+
+.box a h3,
+.box a strong {font-size: 18px; margin-top: 15px; margin-bottom: 10px;}
+.box a p,
+.box a em {font-size: 12px; }
+
+.box2 {}
+.box2 a {}
+.box2 a img {}
+.box2 a strong {display:block}
+.box2 a em {}
+
+
+.box1 { width: 310px; height: 410px; background-color: #efefef; padding: 20px 25px; box-sizing: border-box; margin:50px auto}
+.box1 a {}
+.box1 a img {}
+.box1 a h3 { font-size: 18px; margin-top: 15px; margin-bottom: 10px; }
+.box1 a p { font-size: 12px; }
+
+
+.box2 { width: 310px; height: 410px; background-color: #efefef; padding: 20px 25px; box-sizing: border-box; margin:50px auto}
+.box2 strong { font-size: 18px; display:block; margin-top: 15px; margin-bottom: 10px; }
+.box2 em { font-size: 12px;}

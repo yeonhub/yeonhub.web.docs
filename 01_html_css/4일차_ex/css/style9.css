@@ -1,0 +1,31 @@
+.con-box {
+    width: 880px;
+    background-color: #efefef;
+    margin: auto;
+    padding: 40px;
+    box-sizing: border-box;
+    text-align: center;
+}
+.con-box h2 {
+    font-size: 30px;
+    padding-top: 50px;
+    margin-bottom: 55px;
+    font-weight: 300;
+    line-height: 1.8;
+}
+.con-box h2 span {
+    border-bottom: 1px solid #000;
+    padding-bottom: 4px;
+}
+.con-box h2 .txt1 {}
+.con-box h2 .txt2 {
+    font-weight: 700;
+}
+.con-box p {
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+.con-box .img-txt {
+    font-size: 14px;
+    color: gray;
+}
