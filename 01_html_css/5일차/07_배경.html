@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <style>
+        .box {
+            width: 500px;
+            margin: auto;
+        }
+
+    .box div {
+        width: 500px;
+        height: 450px;
+        border: 1px solid #000;
+        margin-bottom: 50px;
+        background-image: url(images/a2.png);
+        background-repeat: no-repeat;
+    }
+    .a1 {
+        background-position:100px 200px;
+        /* 배경의 왼쪽 상단 기준 */
+    }
+    .a2 {
+        background-position: 40% 30%;
+        /* %는 배경 이미지가 아닌 부모를 기준 */
+    }
+    .a3 {
+        background-position: center top ;
+        /* 키워드 : 영역(부모)를 기준 */
+    }
+    .a4 {
+        background-position: 50px;
+    }
+    .a5 {
+        background-position: top 50px left 100px;
+    }
+    </style>
+</head>
+<body>
+        <div class="box">
+            <div class="a1"></div>
+            <div class="a2"></div>
+            <div class="a3"></div>
+            <div class="a4"></div>
+            <div class="a5"></div>
+        </div>
+        <pre>
+            background-image: url()
+            background-repeat:repeat : 기본 반복
+            x : x축 반복
+            y : y축 반복
+            no-repeat : 반복X
+
+            background-position:x y 
+            x축, y축 의미
+            background-position-x:
+            x축만
+            background-position-y:
+            y축만
+            x : left / center / right
+            y : top / center / bottom
+
+            background-position: bottom 50px right 100px;
+            밑에서 50px 오른쪽에서 100px 떨어져서
+        </pre>
+</body>
+</html>

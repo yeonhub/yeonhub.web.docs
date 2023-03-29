@@ -1,0 +1,82 @@
+1)01
+구글 폰트 적용 방법
+1.css 맨 위 @import 복붙
+2.폰트 패밀리 바디 부분에 복붙
+
+
+(*)
+text-align: center;=tac
+width=w
+height=h
+border: 1px solid #000;=bd
+
+
+2)02,03
+border-radius
+모서리 둥글게
+좌상 우상 우하 좌하 (꼭지점 부터 몇 px? 몇 %? )
+border-top-left-radius: 50px 20px;
+/* 좌상 꼭지점 기준 윗부분 50px, 옆부분 20px */
+.con-box .box1 {
+    border-top-left-radius: 50px 20px;
+    /* 좌상 꼭지점 기준 윗부분 50px, 옆부분 20px */
+    border-top-right-radius: 40px 60px;
+    border-bottom-right-radius: 40px 50px;
+    border-bottom-left-radius: 20px 60px;
+}
+.con-box .box2 {
+    border-radius: 50px 40px 40px 20px / 20px 60px 50px 60px
+    /* box1와 같은 결과 */
+}
+
+3)04_그림자
+box-shadow / text-shadow 
+(가로거리 세로거리 블러 색상) px, % +, - 사용 가능
+(가로거리 세로거리 블러 그림자크기 색상)
+inset : box-shadow 만 적용 가능 text-shadow 불가능
+
+4)05
+overflow
+visible : 기본값
+hidden : 영역 까지만 보이기 (많이 사용)
+scroll : 스크롤
+auto : 회원가입 약관에 주로 사용
+
+5)06
+text-overflow: ellipsis;
+(...) 줄임말
+
+6)07
+배경
+background-image: url()
+background-repeat:repeat : 기본 반복
+x : x축 반복
+y : y축 반복
+no-repeat : 반복X
+
+background-position:x y 
+x축, y축 의미
+background-position-x:
+x축만
+background-position-y:
+y축만
+x : left / center / right
+y : top / center / bottom
+
+background-position: bottom 50px right 100px;
+밑에서 50px 오른쪽에서 100px 떨어져서
+
+7)08
+배경 고정
+background-attachment:fixed; 
+전체 문서(body)가 기준 휠을 움직여도 배경은 고정
+
+8)09
+배경 사이즈
+background-size
+background-size: 너비 높이
+단위 : px, %, cover, contain
+
+9)10
+
+

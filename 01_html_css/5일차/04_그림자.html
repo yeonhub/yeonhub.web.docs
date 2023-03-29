@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <style>
+        .con-box {
+            width: 600px;
+            margin: auto;
+        }
+        .con-box .box {
+            width: 250px;
+            height: 100px;
+            border: 1px solid #000;
+            text-align: center;
+            line-height: 100px;
+            margin: 20px;
+            display: inline-block;
+            /* 밑으로 나열되지 않고 박스 크기 만큼 옆으로 나열 */
+
+            font-size: 40px;
+            text-transform: uppercase;
+            font-weight: 700;
+        }
+        .con-box .box1 {
+            box-shadow: 10px 10px 0 #dcdcdc;
+            text-shadow: 4px 4px 0 #dcdcdc;
+        }
+        .con-box .box2 {
+            box-shadow: -10px -10px 10px #333;
+            text-shadow: 4px 4px 4px orange;
+        }
+        .con-box .box3 {
+            box-shadow: 0 0 15px black;
+            text-shadow: 3px 3px 10px yellow;
+        }
+        .con-box .box4 {
+            box-shadow: 5px 5px 0 red, 
+                        10px 10px 0 green,
+                        15px 15px 0 pink;
+
+            text-shadow: 2px 2px 0 red,
+                        4px 4px 0 green,
+                        6px 6px 0 pink;
+                /* 여러개 적용 가능 */
+        }
+        .con-box .box5 {
+            /* box-shadow: inset 5px 5px 0 #dcdcdc; */
+            /* box-shadow: inset 0 0 10px #333; */
+            box-shadow: 0 0 0 15px #dcdcdc;
+        }
+        .con-box .box6 {
+            box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+        }
+    </style>
+</head>
+<body>
+     <div class="con-box">
+        <div class="box box1">테스트1</div>
+        <div class="box box2">테스트2</div>
+        <div class="box box3">테스트3</div>
+        <div class="box box4">테스트4</div>
+        <div class="box box5">테스트5</div>
+        <div class="box box6">테스트6</div>
+     </div>
+    <pre>
+        ==============================================================================
+        box-shadow / text-shadow 
+        (가로거리 세로거리 블러 색상) px, % +, - 사용 가능
+        (가로거리 세로거리 블러 그림자크기 색상)
+        inset : box-shadow 만 적용 가능 text-shadow 불가능
+
+
+    </pre>
+</body>
+</html>
