@@ -1,0 +1,65 @@
+#wrap {
+    width: 100%;
+}
+.inner {
+    /* inner 공통 */
+    width: 1170px;
+    margin: auto;
+}
+#header {
+    width: 100%;
+    background: #6d6d6d;
+}
+#header .inner {
+    height: 120px;
+    background: #e1e1e1;
+}
+#visual {
+    width: 100%;
+    background-color: #a9a9a9;
+}
+#visual .inner {
+    height: 720px;
+    background-color: #fd9999;
+}
+#content {}
+#content .con1{
+    width: 100%;
+    background-color: #6d6d6d;
+}
+#content .con1 .inner {
+    height: 90px;
+    background-color: #e1e1e1;
+}
+#content .con2 {
+    width: 100%;
+    background-color: #2c2c2c;
+}
+#content .con2 .inner{
+    height: 940px;
+    background-color: #3058b0;
+}
+#content .con3 {
+    width: 100%;
+    background-color: #808184;
+}
+#content .con3 .inner{
+    height: 710px;
+    background-color: #686c77;
+}
+#content .con4 {
+    width: 100%;
+    background-color: #585858;
+}
+#content .con4 .inner{
+    height: 720px;
+    background-color: #3b3b3b;
+}
+#footer {
+    width: 100%;
+    background-color: #828282;
+}
+#footer .inner{
+    height: 320px;
+    background-color: #afafaf;
+}

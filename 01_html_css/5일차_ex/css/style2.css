@@ -1,0 +1,47 @@
+.con-box {
+    width: 550px;
+    padding: 40px;
+    background-color: #ededed;
+    box-sizing: border-box;
+}
+.con-box h2 {
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+.con-box ul {}
+.con-box ul li {
+    font-size: 17px;
+    margin-bottom: 10px;
+    height: 30px;
+}
+.con-box ul li:nth-child(1) {
+    background-image: url(../images/num01.png);
+    background-repeat: no-repeat;
+    padding-left: 40px;
+}
+.con-box ul li:nth-child(2) {
+    background-image: url(../images/num02.png);
+    background-repeat: no-repeat;
+    padding-left: 40px;
+}
+.con-box ul li:nth-child(3) {
+    background-image: url(../images/num03.png);
+    background-repeat: no-repeat;
+    padding-left: 40px;
+}
+.con-box ul li:nth-child(4) {
+    background-image: url(../images/num04.png);
+    background-repeat: no-repeat;
+    padding-left: 40px;
+}
+.con-box ul li:nth-child(5) {
+    background-image: url(../images/num05.png);
+    background-repeat: no-repeat;
+    padding-left: 40px;
+}
+.con-box ul li:nth-child(6) {
+    background-image: url(../images/num06.png);
+    background-repeat: no-repeat;
+    padding-left: 40px;
+}
