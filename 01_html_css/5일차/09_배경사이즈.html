@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <style>
+        .box {
+            width: 500px;
+            margin: auto;
+        }
+
+    .box div {
+        width: 500px;
+        height: 450px;
+        border: 1px solid #000;
+        margin-bottom: 50px;
+
+        background-image: url(images/a2.png);
+        background-repeat: no-repeat;
+        background-position: 0 0;
+    }
+    .a1 {
+        background-size: 50% 30%;
+        /* background-size: 너비 높이 ; */
+    }
+    .a2 {
+        background-size: contain;
+        /* contain : 배경 이미지가 너비 또는 높이에 가까운 쪽에 맞게 */
+    }
+    .a3 {
+        background-size: cover;
+        /* cover : 배경 이미지가 너비 또는 높이에 먼 쪽에 맞게 가까운 쪽은 같은 비율로, contain보다 많이 사용 */
+    }
+    .box .a4 {
+        background-image: url(images/bigimg0.png);
+        background-size: cover;
+    }
+    .a5 {
+
+    }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="a1"></div>
+        <div class="a2"></div>
+        <div class="a3"></div>
+        <div class="a4"></div>
+        <div class="a5"></div>
+    </div>
+    <pre>
+        ==============================================================================
+        background-size
+        background-size: 너비 높이
+        단위 : px, %, cover, contain
+
+        배경 이미지 작성
+        1. 반드시 너비/높이 공간 존재
+        2. 주로 장식용 이미지 처리
+            2-1. 아이콘(이미지 높이가 다를 경우)
+            2-2. 비주얼 광고 사진
+    </pre>
+</body>
+</html>

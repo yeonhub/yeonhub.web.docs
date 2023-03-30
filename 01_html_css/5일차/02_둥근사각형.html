@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <style>
+        .con-box {
+            width: 600px;
+            margin: auto;
+        }
+        .con-box .box {
+            width: 250px;
+            height: 100px;
+            border: 1px solid #000;
+            text-align: center;
+            line-height: 100px;
+            margin: 10px;
+            display: inline-block;
+            /* 밑으로 나열되지 않고 박스 크기 만큼 옆으로 나열 */
+        }
+        .con-box .box1 {
+            border-radius: 20px 15px 30px 40px;
+        }
+        .con-box .box2 {
+            border-radius: 20px 10px
+        }
+        .con-box .box3 {
+            border-radius: 10% 30% 20% 50%
+        }
+        .con-box .box4 {
+            width: 100px;
+            border-radius: 50%
+            /* 부모 박스와 높이를 같게 하면 원을 만들 수 있다 */
+        }
+        .con-box .box5 {
+            border-radius: 0 30% 30% 0
+        }
+        .con-box .box6 {
+            border-radius: 40% 40% 0 0
+        }
+    </style>
+</head>
+<body>
+     <div class="con-box">
+        <div class="box box1">테스트1</div>
+        <div class="box box2">테스트2</div>
+        <div class="box box3">테스트3</div>
+        <div class="box box4">테스트4</div>
+        <div class="box box5">테스트5</div>
+        <div class="box box6">테스트6</div>
+     </div>
+    <pre>
+        ==============================================================================
+        border-radius : 둥근 사각형
+        border-radius : 왼상 오상 오하 왼하
+        단위 px, %
+        너비/높이 동일 : 100%, 50% - 정원
+
+    </pre>
+</body>
+</html>

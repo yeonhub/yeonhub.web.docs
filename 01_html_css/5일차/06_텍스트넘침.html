@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <style>
+        p {
+            margin: 20px;
+            border: 1px solid #000;
+            width: 300px;
+
+            white-space: nowrap;
+            overflow: hidden;
+            /* 사이즈 만큼만 인식 */
+            text-overflow: ellipsis;
+        }
+        div {
+            margin: 20px;
+            border: 1px solid #000;
+            width: 300px;
+            height: 75px;
+
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical
+            /* 3줄 까지만 나타내고 (...) */
+        }
+    </style>
+</head>
+<body>
+     <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, libero? Ea necessitatibus dicta ratione, nobis, mollitia quo, neque eius at quam adipisci beatae inventore! Officia, cumque? Nihil blanditiis placeat ducimus!
+     </p>
+     <div>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, libero? Ea necessitatibus dicta ratione, nobis, mollitia quo, neque eius at quam adipisci beatae inventore! Officia, cumque? Nihil blanditiis placeat ducimus!
+     </div>
+     <a href="#">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, libero? Ea necessitatibus dicta ratione, nobis, mollitia quo, neque eius at quam adipisci beatae inventore! Officia, cumque? Nihil blanditiis placeat ducimus!
+     </a href="#">
+    <pre>
+        ======================================================================
+        text-overflow: ellipsis; : 한 줄텍스트 말 줄임 (...)
+        1.너비값 필수
+        2.white-space: nowrap; 한 줄
+        3.overflow: hidden;
+        4.text-overflow: ellipsis;
+        하나라도 사용하지 않으면 적용되지 않음
+
+        여러줄 말 줄임 (...) 크롬, 사파리, 오페라 브라우저
+        display: -webkit-box;
+        -webkit-line-clamp: 줄수;
+        -webkit-box-orient: vertical
+    </pre>
+</body>
+</html>
