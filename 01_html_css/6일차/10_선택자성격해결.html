@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <style>
+        .con-box {
+            width: 300px;
+            padding: 20px;
+            border: 1px solid #000;
+            margin: auto;
+        }
+        .con-box h2 {
+            font-size: 40px;
+            font-weight: 500;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+        .con-box h3 {
+            font-size: 20px;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .con-box p {
+            line-height: 30px;
+        }
+        .con-box p:nth-of-type(1) {
+            background: yellow;
+        }
+        .con-box p:nth-of-type(2) {
+            background: pink;
+        }
+        .con-box p:first-of-type {
+            background: orange;
+        }
+        .con-box p:nth-of-type(odd) {
+            background: plum;
+        }
+        .con-box ul li:nth-of-type(1) {
+            background: tan;
+        }
+    </style>
+</head>
+<body>
+     <!-- div.con-box>h2{타이틀}+h3{타이틀2}+p{설명입니다}*5+ul>li{list$}*5 -->
+     <div class="con-box">
+        <h2>타이틀</h2>
+        <h3>타이틀2</h3>
+        <p>설명입니다</p>
+        <p>설명입니다</p>
+        <p>설명입니다</p>
+        <p>설명입니다</p>
+        <p>설명입니다</p>
+        <ul>
+            <li>list1</li>
+            <li>list2</li>
+            <li>list3</li>
+            <li>list4</li>
+            <li>list5</li>
+        </ul>
+     </div>
+    <pre>
+        ===============================================
+        nth-of-type : 
+    </pre>
+</body>
+</html>

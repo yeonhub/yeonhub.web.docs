@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <style>
+        .logo2 {
+            display: block;
+
+            width: 120px;
+            height: 40px;
+            background-repeat: no-repeat;
+            background-position: 0 0;
+            background-image: url(images/logo.JPG);
+            border: 1px solid #000;
+
+            /* 텍스트 처리 */
+            text-indent: -5000px;
+            /* 브라우저 왼쪽 안 보이는 곳으로 */
+            overflow: hidden;
+            /* overflow: hidden이랑 같이 쓸 것 (끊어주기 위해) */
+
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 로고 -->
+    <!-- h1>a[href="#"]>img -->
+    <h1 class="logo1">
+        <a href="#">
+            <img src="images/logo.JPG" alt="kakao">
+        </a>
+    </h1>
+    <h1 class="logo2">
+        <a href="#">
+            <!-- 스크린 리더 읽어주는 텍스트 -->
+            <!-- 반응형 작업할때 주로 사용 (alt X) -->
+            카카오
+        </a>
+    </h1>
+
+    <pre>
+        ===============================================
+        접근성 이미지
+
+    </pre>
+</body>
+
+</html>

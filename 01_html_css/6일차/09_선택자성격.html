@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <style>
+        .con-box {
+            width: 300px;
+            padding: 20px;
+            border: 1px solid #000;
+            margin: auto;
+        }
+        .con-box h2 {
+            font-size: 40px;
+            font-weight: 500;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+        .con-box h3 {
+            font-size: 20px;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .con-box p {
+            line-height: 30px;
+        }
+        .con-box p:nth-child(1) {
+            background-color: yellow;
+        }
+        .con-box p:nth-child(2) {
+            background-color: orange;
+        }
+        .con-box p:nth-child(3) {
+            background-color: pink;
+        }
+        .con-box p:nth-child(4) {
+            background-color: skyblue;
+        }
+    </style>
+</head>
+<body>
+     <!-- div.con-box>h2{타이틀}+h3{타이틀2}+p{설명입니다}*5+ul>li{list$}*5 -->
+     <div class="con-box">
+        <h2>타이틀</h2>
+        <h3>타이틀2</h3>
+        <p>설명입니다</p>
+        <p>설명입니다</p>
+        <p>설명입니다</p>
+        <p>설명입니다</p>
+        <p>설명입니다</p>
+        <ul>
+            <li>list1</li>
+            <li>list2</li>
+            <li>list3</li>
+            <li>list4</li>
+            <li>list5</li>
+        </ul>
+     </div>
+    <pre>
+        ===============================================
+        nth-child : 형제 요소가 동일할 경우만 사용(주로 ul, ol)
+        부모(.con-box)
+            자식을 순서대로 인식
+            h2 : 1
+            h3 : 2
+            p : 3
+            p : 4
+            p : 5 ...
+    </pre>
+</body>
+</html>

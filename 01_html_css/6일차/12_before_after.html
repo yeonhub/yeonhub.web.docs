@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <style>
+        .box {
+            width: 400px;
+            height: 400px;
+            border: 1px solid #000;
+            margin: 30px;
+            padding: 10px
+        }
+        .box h2 {
+            font-size: 20px;
+            background-color: green;
+        }
+        .box h3 {
+            font-size: 18px;
+            background: yellowgreen;
+        }
+        .box p {
+            background-color: greenyellow;
+        }
+        /* .box 맨 뒤에 추가 */
+        .box::after {
+            content:"맨 뒤에 추가";
+            background-color: turquoise;
+            display: block;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            box-shadow: 5px 5px 3px #000;
+            line-height: 150px;
+            text-align: center;
+        }
+        .box::before {
+            content:"맨 앞에 추가";
+            display: block;
+            background-color: olive;
+            width: 100px;
+            height: 100px;
+            box-shadow: inset 5px 5px 5px black;
+        }
+    </style>
+</head>
+<body>
+     <div class="box">
+        <h2>제목2</h2>
+        <h3>제목3</h3>
+        <p>문단입니다</p>
+     </div>
+    <pre>
+        ===============================================
+        ::before , ::after : content 필수, 인라인 성격, 
+                            모든 태그 가능(예외 존재) img, input 등
+        ::before {content:""}
+        ::after {content:""}
+        요소의 맨 앞, 맨 뒤
+    </pre>
+</body>
+</html>
