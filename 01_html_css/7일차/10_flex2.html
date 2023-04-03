@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <style>
+        .con-box {
+            padding: 10px;
+            border: 1px solid #000;
+            margin: 20px;
+            display: flex;
+            /* flex-direction: row; */
+            /* flex-direction: column; */
+            /* flex-direction: row-reverse; */
+            /* flex-direction: column-reverse; */
+        }
+        .con-box .box {
+            width: 100px;
+            /* height: 100px; */
+            font-size: 30px;
+            line-height: 100px;
+            text-align: center;
+        }
+        .con-box .box1 {
+            background: orange;
+        }
+        .con-box .box2 {
+            background: pink;
+        }
+        .con-box .box3 {
+            background: beige;
+        }
+        .con-box .box4 {
+            background: gold;
+        }
+    </style>
+</head>
+<body>
+     <!-- div.con-box>div.box.box$*4 -->
+     <div class="con-box">
+        <div class="box box1">1</div>
+        <div class="box box2">2</div>
+        <div class="box box3">3</div>
+        <div class="box box4">4</div>
+     </div>
+    <pre>
+        ==================================
+        flex : 열으로 나열
+        주축 / 교차축 
+        부모(container) : display: flex
+        자식(item) : 옆으로 나열, 높이값이 없으면 기본값은 stretch
+
+        주축 변경
+        flex-direction: row/ column
+
+    </pre>
+</body>
+</html>

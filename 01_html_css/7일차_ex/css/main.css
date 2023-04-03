@@ -1,0 +1,61 @@
+#wrap {
+    width: 100%;
+}
+#header {
+    width: 100%;
+    background: bisque;
+}
+#header .inner {
+    width: 1300px;
+    height: 150px;
+    margin: auto;
+    background: thistle;
+        
+}
+#visual {
+    background: cornflowerblue;
+    width: 100%;
+    height: 800px;
+}
+#container {
+
+}
+#content {
+
+}
+
+/* 첫 페이지 시작 */
+.main {}
+.main .con-box {
+    width: 100%;
+}
+.main .con-box .inner {
+    width: 1300px;
+    margin: auto;
+    padding: 100px 0;
+    box-sizing: border-box;
+}
+/* con1 */
+.main .con1 {}
+.main .con1 h2 {
+    padding-top: 30px;
+    font-size: 40px;
+    text-align: center;
+    font-weight: 700;
+    border-bottom: 3px solid black;
+}
+.main .con1 li {
+    display: flex;
+    margin-top: 110px;
+    border-bottom: 1px solid #999;
+}
+.main .con1 li h3 {
+    color: #9e7a50;
+    font-size: 25px;
+}
+.main .con1 li p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+}

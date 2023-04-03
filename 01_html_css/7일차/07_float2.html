@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <style>
+        .box {
+            padding: 10px;
+            border: 2px solid red;
+            overflow: hidden;
+        }
+        .box div {
+            width: 100px;
+            height: 100px;
+        }
+        .box div:nth-child(1) {
+            background: yellow;
+            float: right;
+        }
+        .box div:nth-child(2) {
+            background: skyblue;
+            float: left;
+        }
+        .box div:nth-child(3) {
+            background: beige;
+            float: right;
+        }
+        .box div:nth-child(4) {
+            background: pink;
+            float: left;
+        }
+        p {
+            clear: both;
+            margin-top: 120px;
+        }
+        .clearfix::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+     <div class="box clearfix">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+     </div>
+     
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit natus consequatur, iure voluptatibus officiis minus itaque quas magnam assumenda veritatis rerum architecto esse nesciunt culpa! Distinctio officiis vitae ea nulla.</p>
+    <pre>
+        ==================================
+        박스 옆으로 나열
+        1. display: inline-bolck(거의 사용X)
+        2. float : 띄워서 나열 (15% 사용)
+        나머지 대상들도 옆으로 따라서 나열
+        left 띄워서 왼쪽부터 나열
+        right 띄워서 오른쪽부터 나열
+        none 적용 안됨
+
+        clear
+        left : 왼쪽 해제
+        right : 오른쪽 해제
+        both : 둘 다 해제
+
+        * 자식을 띄우면 부모가 자식을 인식하지 못한다 
+
+        해결 
+        1. 부모에 overflow:hidden 
+        2. 부모에 ::after { content:""; display:block; clear:both } 
+          주로 .clearfix::after { content:""; display:block; clear:both } 만들고 사용한다.
+
+        float 알아야 하는 이유
+        1. 유지/보수
+        2. flex가 안될때 해결
+    </pre>
+</body>
+</html>
