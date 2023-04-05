@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background: orange;
+            font-size: 50px;
+            text-align: center;
+            line-height: 2;
+            font-weight: 700;
+            color: #fff;
+            border: 1px solid #000;
+        }
+
+        div:nth-child(1) {
+            position:absolute;
+            left: 0;
+            top: 0;
+        }
+        div:nth-child(2) {
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+        div:nth-child(3) {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+        div:nth-child(4) {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+        div:nth-child(5) {
+            position: absolute;
+            left: 50%;
+            top: 200px;
+        }
+    </style>
+</head>
+<body>
+     <div>1</div>
+     <div>2</div>
+     <div>3</div>
+     <div>4</div>
+     <div>5</div>
+
+
+
+    <pre>
+        ------------------
+        postion : 위치 설정, 고정
+        1. absolute : 절대위치, 단위 : px, %
+            left, right, top, bottom
+            부모를 기준으로 상하좌우 절대위치 조절, 부모의 기준이 없으면 body(document)가 기준
+            부모가 absolute, relative, fixed라면 부모가 기준(static은 제외)
+
+            1) 이미지 겹칠 때
+            2) 아래 있는 요소를 위로 올릴 때
+            3) 특정 위치를 지정할 때
+            레이아웃 잡을때 사용하지 말것
+            
+
+    </pre>
+</body>
+</html>

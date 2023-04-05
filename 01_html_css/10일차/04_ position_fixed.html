@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <style>
+        div {
+            width: 100%;
+            height: 1000px;
+        }
+        div:nth-child(1) {
+            background: yellow;
+        }
+        div:nth-child(2) {
+            background: pink;
+        }
+        .top {
+            width: 80px;
+            height: 80px;
+            text-align: center;
+            line-height: 80px;
+            font-size: 18px;
+            color: #fff;
+            background: #000;
+
+
+            /* 스크롤 이동시 화면에 고정 */
+            position: fixed;
+            left: 80%;
+            bottom: 0;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+    <div></div> 
+    <div></div> 
+    <p class="top">맨위</p>
+    <pre>
+        ------------------
+        position: fixed; 부모는 body 고정
+        left, top, bottom, right, px, %
+
+    </pre>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <style>
+        .box {
+            width: 500px;
+            height: 500px;
+            border: 1px solid #000;
+            margin: 50px auto;
+
+            /* 기준 */
+            position: relative;
+        }
+
+        .box div {
+            width: 80px;
+            height: 80px;
+            border: 1px solid #000;
+            font-size: 40px;
+            text-align: center;
+            line-height: 80px;
+        }
+        .box div:nth-child(1) {
+            background: pink;
+            position: absolute;
+            left: 10px;
+            top: 10px;
+        }
+
+        .box div:nth-child(2) {
+            background: hotpink;
+            position: absolute;
+            left: 300px;
+            top: 100px;
+        }
+
+        .box div:nth-child(3) {
+            background: yellow;
+            position: absolute;
+            left: 200px;
+            top: 100px;
+        }
+
+        .box div:nth-child(4) {
+            background: skyblue;
+            position: absolute;
+            left: 350px;
+            top: 200px;
+        }
+
+        .box div:nth-child(5) {
+            background: green;
+            position: absolute;
+            left: 100px;
+            top: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+    </div>
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque quos maiores odio distinctio veniam dolor, et
+        iure ad eaque ut iusto id non beatae corporis voluptatem debitis vero doloribus eum.
+    </p>
+
+    <pre>
+        position: relative; 
+        자식들 위치는 자신(자식)이 기준
+        자식들이 position: absolute; 일 경우 반드시 높이를 부모에 지정해야 한다.
+
+    </pre>
+
+</body>
+
+</html>

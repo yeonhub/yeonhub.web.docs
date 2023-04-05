@@ -1,0 +1,42 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <style>
+        .con-box { width: 100%; }
+        .con-box .inner { height: 800px; padding: 100px 0; margin: auto; width: 1400px; box-sizing:border-box ;}
+        .con-box h2 { font-size: 50px; text-align: center; font-weight: 700; margin-bottom: 20px;}
+        .con-box p { font-size: 18px; text-align: center; margin-bottom: 50px;}
+        .con1 {
+            position: relative;
+        }
+        .con1::after {
+            content: "";
+            display: block;
+            width: 50%;
+            height: 800px;
+            background: tan;
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: -1;
+        }
+        .con2 { background: #DCDCDC ;}
+    </style>
+</head>
+<body>
+     <div class="con-box con1">
+        <div class="inner">
+            <h2>타이틀</h2>
+            <p>지금은연습중</p>
+        </div>
+     </div>
+     <div class="con-box con2">
+        <div class="inner">
+            <h2>타이틀</h2>
+            <p>지금은연습중</p>
+        </div>
+     </div>
+</body>
+</html>
