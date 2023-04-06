@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+
+    </style>
+    <script>
+        'use strict';
+         
+        let name = '',
+        kor = 0,
+        eng = 0,
+        mat = 0,
+        sum = 0,
+        avg = 0,
+        grade = '';
+
+        name = prompt('이름');
+        kor =Number (prompt('국어 점수'));
+        eng =Number (prompt('영어 점수'));
+        mat =Number (prompt('수학 점수'));
+        sum =Number (kor+eng+mat);
+        avg =Number (sum/3);
+
+        if (avg>=90) {
+            grade='A';
+        } else if (avg>=80) {
+            grade='B';
+        } else if (avg>=70) {
+            grade='C';
+        } else if (avg>=60) {
+            grade='D';
+        } else {
+            grade='F';
+        }
+
+
+        // avg.toFixed(2)
+
+        alert (name+'의 평균점수는 '+avg.toFixed(2)+'점이고 학점은'+grade+'입니다.')
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
