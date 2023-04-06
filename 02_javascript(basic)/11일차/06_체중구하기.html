@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+
+    </style>
+    <script>
+        'use strict';
+
+        let name ='', 
+        height = 0, 
+        weight = 0,
+        avgWeight = 0,
+        result;
+
+        name =  prompt('이름');
+        height = Number( prompt('키 (cm)'));
+        weight = Number( prompt('몸무게 (kg)'));
+        avgWeight = Number (height / 100 * 2 * 21);
+
+        result = ( avgWeight <= weight) ? '정상체중' : '과체중';
+        document.write(name,'은 ',result,'입니다.');
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
