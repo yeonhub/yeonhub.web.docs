@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+        'use strict';
+        let num1 = 0, num2 = 0, op = '', result=0;
+        num1=Number
+        num2=Number
+        num1 = 5;
+        num2 = 2;
+        op=prompt('연산자를 입력하세요.');
+
+        switch (op) {
+            case '+': result=(num1+num2);
+            break;
+            case '-': result=(num1-num2);
+            break;
+            case '*': result=(num1*num2);
+            break;
+            case '/': result=(num1/num2);
+            break;
+            case '%': result=(num1%num2);
+            break;
+        }
+        if ( op === '+' || '-' || '*' || '/' || '%' ) {
+            document.write(result);
+        } else {
+            document.write('다시 입력하세요 해당 연산자는 존재하지 않습니다.');
+        }
+    </script>
+</head>
+<body>
+    <pre>
+        num1 = 숫자 : 5
+        num2 = 숫자 : 2
+        op = + - * / % : *
+        result 10
+        결과 5 * 2 = 10
+        다른연산자가 또는 문자등 입력되면
+        다시 입력하세요 해당 연산자는 존재하지 않습니다
+    </pre>
+</body>
+</html>

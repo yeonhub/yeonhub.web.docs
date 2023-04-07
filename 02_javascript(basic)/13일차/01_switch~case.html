@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+       'use strict';
+        let month = 0, day = 0;
+        month=Number(prompt('월을 입력하세요.'));
+
+        switch (month) {
+            case 1: case 3: case 5:case 7:case 8:case 10:
+            case 12: day = 31;
+            break;
+        
+            case 4:case 6:case 9:
+            case 11: day = 30;
+            break;
+
+            case 2: day = 28;
+            break;
+        }
+
+        if (month >=1 && month<=12) {
+            document.write(month+'월은 '+day+'일 까지 입니다.');
+        } else {
+            document.write('다시 입력하세요. '+month+'월은 존재하지 않습니다.');
+        } 
+
+    </script>
+</head>
+<body>
+    <pre>
+        month 월을 입력받기 ,
+        day = 일 - switch ~ case
+
+        결과
+        1월은 31일까지 입니다. documwnt.write
+        month월은 day일까지 입니다.
+
+        단 1 ~ 12월 까지 입력하면 (if문처리)
+        [1월은 31일까지 입니다.]
+        해당 범위가 아니면 [ 다시 입력하세요 해당 월은 존재하지 않습니다 ]
+    </pre>
+</body>
+</html>
