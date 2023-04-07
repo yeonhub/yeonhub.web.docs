@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+        'use strict';
+        //break 중단 : 보통 무한 반복할 때 사용
+        let x = 0;
+        while(true) { //무한반복
+            if(x>10) {
+                break;
+            }
+            document.write(x, '<br>');
+            x++;
+        }
+    </script>
+</head>
+<body>
+    <pre>
+        //break 중단 : 보통 무한 반복할 때 사용
+        
+        for(let i = 0; i<100; i++) {
+            document.write(i,'<br>');
+            if(i===10) {
+                break;
+            }
+        }
+    </pre>
+</body>
+</html>

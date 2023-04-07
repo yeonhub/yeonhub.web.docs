@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+        'use strict';
+
+        let month, day, year;
+        
+        year = '<select>';
+            year += '<option> ===연=== </option>';
+            for( let i = 2023; i>=1900; i--) {
+                year += '<option> '+i+'년 </option>';
+            }
+            year +='</select>';
+        document.write(year);
+
+        month = '<select>';
+            month = month + '<option> ===월=== </option>';
+            for( let i=1; i<=12; i++) {
+            month += '<option> '+i+'월 </option>';
+        }
+            month += '</select>';
+        document.write(month);
+
+        day = '<select>';
+            day += '<option> ===일=== </option>';
+            for( let i=1; i<=31; i++) {
+            day += '<option> '+i+'일 </option>';
+        }
+            day +='</select>';
+        document.write(day);
+        
+    </script>
+</head>
+<body>
+    <pre>
+        
+    </pre>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+        'use strict';
+        let x = 1, sum= 0, sum2=0;
+        while(x<=50){
+            if(x%5===0) {
+            sum=sum+x;
+            }
+            x++;
+        }
+        document.write('총합 : ',sum);
+
+        document.write('<br>');
+        
+        let y = 1;
+        while(y<=20) {
+            if(y%2===0){
+                sum2+=y;
+            }
+            y++;
+        }
+        document.write('총합 : ',sum2);
+    </script>
+</head>
+<body>
+    <pre>
+        1~50까지 5의 배수 합
+
+        1부터 20까지 짝수출력
+    </pre>
+</body>
+</html>
