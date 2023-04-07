@@ -1,0 +1,80 @@
+.con-box h2 {
+    text-align: center;
+    font-size: 50px;
+    margin-top: 30px;
+}
+.con-box .box {
+    width: 700px;
+    height: 450px;
+    background: antiquewhite;
+    margin: 50px auto;
+    box-sizing: border-box;
+    padding: 40px 50px;
+}
+.con-box .box h3 {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+.con-box .box ul {}
+.con-box .box ul li {
+    padding: 15px 0;
+    border-bottom: 1px dashed gray;
+}
+.con-box .box ul li:last-child {
+    border-bottom: none;
+}
+.con-box .box ul li a {}
+.con-box .box ul li a strong{
+    display: block;
+    width: 60px;
+    height: 60px;
+    background: #6cc2cd;
+    color: white;
+    font-size: 14px;
+    line-height: 1.2;
+    border-radius: 50%;
+    box-sizing: border-box;
+    padding: 15px 17px;
+    /* padding으로 채용공고 60,60 보다 안쪽으로 */
+}
+.con-box .box ul li a p {
+    font-size: 18px;
+    width: 520px;
+}
+/* ============con1============== */
+.con-box .con1 {}
+.con-box .con1 ul {}
+.con-box .con1 ul li {}
+.con-box .con1 ul li a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* ============con2============== */
+.con-box .con2 {}
+.con-box .con2 ul {}
+.con-box .con2 ul li {
+    overflow: hidden;
+}
+.con-box .con2 ul li a {}
+.con-box .con2 ul li a strong {
+    float: left;
+}
+.con-box .con2 ul li a p {
+    float: right;
+}
+/* ============con3============== */
+.con-box .con3 {}
+.con-box .con3 ul {}
+.con-box .con3 ul li {}
+.con-box .con3 ul li a {
+    position: relative;
+}
+.con-box .con3 ul li a strong {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.con-box .con3 ul li a p{
+    margin-left: 80px;
+}

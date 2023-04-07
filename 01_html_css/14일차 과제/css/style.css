@@ -1,0 +1,34 @@
+.con-box {
+    width: 2300px;
+    height: 400px;
+}
+.con-box div.box {
+    width: 700px;
+    height: 325px;
+    background: antiquewhite;
+    margin: 20px;
+}
+.con-box div.box ul {}
+.con-box div.box ul li.box1 {
+    padding: 10px;
+}
+.con-box div.box ul li.box1 h3 {
+    font-size: 25px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #000;
+}
+.con-box div.box ul li.box1 em {
+    background: #285f74;
+    color: white;
+}
+.con-box div.box ul li.box1 strong {}
+.con-box div.box ul li.box1 p {}
+
+.con-box div.box ul li.box2 {
+    display: none;
+}
+.con-box div.box ul li.box2 h3 {}
+.con-box div.box ul li.box2 em {}
+.con-box div.box ul li.box2 strong {}
+.con-box div.box ul li.box2 p {}
