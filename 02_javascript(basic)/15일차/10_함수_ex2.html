@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+        function make(num) {
+            let result = 0;
+            for (let i = 1; i <= 9; i++) {
+                result = result +(num+' X '+i+' = '+ num * i+'\n');
+            }
+            alert(result);
+        }
+    </script>
+</head>
+
+<body>
+    <button onclick="make(2)">2단</button>
+    <button onclick="make(3)">3단</button>
+    <button onclick="make(4)">4단</button>
+    <button onclick="make(5)">5단</button>
+</body>
+
+</html>
