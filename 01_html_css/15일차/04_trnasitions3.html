@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    
+    <style>
+        .box {
+            width: 600px;
+            margin: 30px auto;
+            border: 1px solid #000;
+        }
+
+        .box div {
+            width: 100px;
+            font-size: 13px;
+            padding-right: 15px;
+            background: cadetblue;
+            color: white;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+            text-align: right;
+        }
+        .box div:last-child {
+            margin-bottom: 0;
+        }
+        .box div:nth-child(1) {
+            transition: all 1s ease;
+        }
+        .box div:nth-child(1):hover {
+            background: orange;
+            width: 550px;
+        }
+        .box div:nth-child(2) {
+            transition: all 1s ease-in;
+        }
+        .box div:nth-child(2):hover {
+            background: orange;
+            width: 550px;
+        }
+        .box div:nth-child(3) {
+            transition: all 2s ease-out;
+        }
+        .box:hover div:nth-child(3) {
+            background: orange;
+            width: 200px;
+        }
+        .box div:nth-child(4) {
+            transition: all 3s ease-in-out;
+        }
+        .box:hover div:nth-child(4) {
+            background: orange;
+            width: 550px;
+        }
+        .box div:nth-child(5) {
+            transition: all 1s linear;
+        }
+        .box:hover div:nth-child(5) {
+            background: orange;
+            width: 300px;
+        }
+        .box div:nth-child(6) {
+            transition: all 1s cubic-bezier(1,0,0,1);
+        }
+        .box:hover div:nth-child(6) {
+            background: orange;
+            width: 500px;
+        }
+    </style>    
+</head>
+<body>
+    <div class="box">
+        <div>ease</div>
+        <div>ease-in</div>
+        <div>ease-out</div>
+        <div>ease-in-out</div>
+        <div>linear</div>
+        <div>cubic-bezier</div>
+    </div>
+    <pre>
+        움직임, 효과를 넣을 대상에 hover 사용 가능 하지만, (10%)
+        대상의 부모 또는 상황에 따라 그의 부모에 hover하고 그 안에 실제 대상에 움직임, 효과가 적용되게 만들기. (대상에 직접 hover 사용 자제) 
+    </pre>
+</body>
+</html>

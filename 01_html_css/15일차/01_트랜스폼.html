@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    
+    <style>
+        .box {
+            margin: 10px;
+        }
+        .box div {
+            width: 80px;
+            height: 80px;
+            font-size: 40px;
+            text-align: center;
+            line-height: 2;
+            background: tan;
+            margin-bottom: 10px;
+            position: relative;
+        }
+        .box div:nth-child(1) {
+            /* transform: translateX(100px); */
+            /* transform: translateY(-50px); */
+            /* transform: translate(100px, -50px); */
+            background: pink;
+            transform: translate(-50%, -50%);
+            /* %는 자기 사이즈 만큼 */
+        }
+        .box div:nth-child(2) {
+            transform: translateX(100%);
+        }
+        .box div:nth-child(3) {
+            left: 300px;
+            /* transform: scale(4,3); */
+            transform: scaleX(2);
+            transform: scaleY(3);
+        }
+        .box div:nth-child(4) {
+            left: 100px;
+            background: tomato;
+            transform: rotate(45deg);
+        }
+        .box div:nth-child(5) {
+            font-size: 80px;
+            line-height: 80px;
+            font-weight: 800;
+            color: deeppink;
+            transform: rotateX(60deg);
+            transform: rotateY(50deg);
+        }
+        .box div:nth-child(6) {
+            transform: skewX(30deg);
+     
+        }
+        .box div:nth-child(7) {
+            transform: 
+            translateX(200px) 
+            rotateX(40deg)
+            skew(20deg, 10deg);
+        }
+    </style>    
+</head>
+<body>
+    <div class="box">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+    </div>
+
+    <pre>
+        transform : 
+        위치 : 자기 자신 기준
+        translate(x, y)
+        translateX(x)
+        trasnlateY(y)
+
+        크기 : 2=2배, 3=3배
+        자식들도 같이 크기 적용
+        scale(너비, 높이)
+        scaleX(너비)
+        scaleY(높이)
+
+        회전 : 
+        rotate : 360도 기준 deg 양수, 음수 가능
+
+        양수            음수
+                 (0)
+        (-90)           (90)
+                (180)
+        
+        rotateX() : x축 기준 회전
+        rotateY() : y축 기준 회전
+
+        기울기 : 양수, 음수 가능 
+        skew(x, y)
+        skewX(xdeg)
+        skewY(ydeg)
+
+    </pre>
+</body>
+</html>
