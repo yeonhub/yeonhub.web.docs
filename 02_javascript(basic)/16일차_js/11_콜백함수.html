@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+        const make=(x, y, call)=> {
+            const result = call(x, y);
+            document.write(`두 수의 결과 : ${result} <br>`);
+        }
+        make (10, 20, function(a, b){
+            return a + b;
+        })
+        make(50, 20, function(a, b){
+            return a - b;
+        })
+        const mul=(a, b)=> {
+            return a * b;
+        }
+        const div=(a, b)=> {
+            return a / b;
+        }
+        const mod=(a, b)=> {
+            return a % b;
+        }
+
+        make(10, 5, mul);
+        make(10, 5, div);
+        make(10, 5, mod);
+    </script>
+</head>
+<body>
+    <pre>
+        
+    </pre>
+</body>
+</html>

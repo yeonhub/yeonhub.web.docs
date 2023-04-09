@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+        // 선언적 함수
+        make1();
+        function make1() {
+            alert('test1')
+        }
+        // make1();
+
+        // make2();
+        // x1(); // 함수 자체를 변수에 담으면 전단계에서 출력되지 않음
+        // 코드를 내려가면서 읽을 때 오류가 발생하면 그 아래는 읽고 출력되지 않음
+        const x1 = function make2() {
+            alert('기명함수');
+        }
+        // x1();
+        make2(); //x1()으로만 부를 수 있음
+
+        const make3 = function() {
+            alert('익명함수')
+        }
+        make3();
+
+        // 즉시실행함수
+        (function(){
+            alert('코드실행');
+        })()
+    </script>
+</head>
+<body>
+    <pre>
+        // 선언적 함수
+        make1();
+        function make1() {
+            alert('test1')
+        }
+        // make1();
+
+        // make2();
+        // x1(); // 함수 자체를 변수에 담으면 전단계에서 출력되지 않음
+        // 코드를 내려가면서 읽을 때 오류가 발생하면 그 아래는 읽고 출력되지 않음
+        const x1 = function make2() {
+            alert('기명함수');
+        }
+        // x1();
+        // make2(); //x1()으로만 부를 수 있음
+
+        const make3 = function() {
+            alert('익명함수')
+        }
+        make3();
+
+        // 즉시실행함수
+        (function(){
+            alert('코드실행');
+        })()
+    </pre>
+</body>
+</html>
