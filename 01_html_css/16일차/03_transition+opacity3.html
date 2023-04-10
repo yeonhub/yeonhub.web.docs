@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    
+    <style>
+        .box {
+            margin: 50px;
+            width: 600px;
+            height: 400px;
+            position: relative;
+            cursor: pointer;
+            overflow: hidden;
+        }
+        .box img {
+            position: absolute;
+            left: 0;
+            top: 0;
+            transition: all 1s ease-in-out;
+        }
+        .box:hover img:last-child {
+            transform:rotate(6000deg);
+            opacity: 0;
+        }
+    </style>    
+</head>
+<body>
+    <div class="box">
+        <img src="images/cat0.jpg" alt="">
+        <img src="images/cat1.jpg" alt="">
+    </div>
+</body>
+</html>
