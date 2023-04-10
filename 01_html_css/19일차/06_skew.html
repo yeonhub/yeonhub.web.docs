@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    
+    <style>
+        .box {
+            margin: 30px;
+            width: 600px;
+        }
+        .box span {
+            display: inline-block;
+            width: 80px;
+            height: 80px;
+            font-size: 80px;
+            line-height: 1;
+            text-transform: uppercase;
+            font-weight: 700;
+            border: 1px solid #000;
+            text-align: center;
+        }
+        .box span:nth-child(odd) {
+            transform: skewY(15deg);
+        }
+        .box span:nth-child(even) {
+            transform: skewY(-15deg);
+        }
+        .box span:nth-child(3n+1) {
+            background: lightblue;
+        }
+        .box span:nth-child(3n+2) {
+            background: lightpink;
+        }
+        .box span:nth-child(3n) {
+            background: lightgreen;
+        }
+    </style>    
+</head>
+<body>
+    project
+    <div class="box">
+        <span>p</span>
+        <span>r</span>
+        <span>o</span>
+        <span>j</span>
+        <span>e</span>
+        <span>c</span>
+        <span>t</span>
+    </div>
+</body>
+</html>

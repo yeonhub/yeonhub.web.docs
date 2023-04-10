@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background: tan;
+            position: relative;
+            margin: 100px;
+
+            animation-name: ani;
+            /* animation 이름 */
+            animation-timing-function: ease-in-out;
+            animation-duration: 2s;
+            /* 시간 */
+            animation-iteration-count: 3;
+            /* 반복 횟수 */
+            animation-delay: 1s;
+            /* 시작 딜레이 */
+            animation-direction: alternate; 
+            /* 원점으로 */
+        }
+        /* 시간 시작 ~ 끝 */
+        @keyframes ani {
+            0%{
+                left: 0;
+                transform: scale(1);
+                rotate: 0deg;
+                border-radius: 0;
+            }
+            100%{
+                left: 500px;
+                background: blueviolet;
+                transform: scale(2);
+                rotate: 360deg;
+                border-radius: 50%;
+            }
+        }
+    </style>    
+</head>
+<body>
+    <div></div>
+</body>
+</html>

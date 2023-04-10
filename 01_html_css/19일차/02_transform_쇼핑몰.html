@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    
+    <style>
+        .box {
+            width: 400px;
+            height: 250px;
+            margin: 50px auto;
+            position: relative;
+            transition: 1s;
+        }
+        .box a img {
+            width: 400px;
+            height: 250px;
+            position: absolute;
+            transition: 1s;
+            top: 0;
+            left: 0;
+        }
+        .box1 p {
+            position: absolute;
+            left: 0;
+            bottom: 20px;
+            text-align: center;
+            width: 100%;
+            opacity: 0;
+        }
+        .box1 p button {
+            border-radius: 50%;
+            width: 70px;
+            height: 70px;
+            border: none;
+            cursor: pointer;
+        }
+        .box1 p button i {
+            font-size: 30px;
+        }
+        .box p button:first-child {
+            margin-right: 15px;
+        }
+        .box:hover a img:last-child {
+            opacity: 0;
+        }
+        .box:hover p {
+            opacity: 1;
+        }
+        /* .box:hover a img:last-child {
+            z-index: 10;
+        }
+        .box:hover p {
+            z-index: 10;
+        }
+        .box1 a img:nth-child(1) {
+            z-index: 10;
+        } 
+        .box1 a img:nth-child(2) {
+            z-index: 1;
+        } 
+        .box1 p {
+            z-index: 1;
+        } */
+    </style>    
+</head>
+<body>
+    <div class="box box1">
+        <a href="">
+            <img src="images/cat0.jpg" alt="">
+            <img src="images/cat1.jpg" alt="">
+        </a>
+        <p>
+            <button>
+                <i class="xi-caret-up-circle-o">
+    
+                </i>
+            </button>
+            <button>
+                <i class="xi-caret-down-circle-o">
+    
+                </i>
+            </button>
+        </p>
+    </div>
+</body>
+</html>

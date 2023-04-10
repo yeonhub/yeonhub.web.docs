@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <style>
+        .box {
+            margin: 100px;
+            display: flex;
+            position: relative;
+
+        }
+        .box a {
+            width: 500px;
+            height: 550px;
+            background-image: url(./SK/image1.jpg);
+            background-repeat: no-repeat;
+            background-position: 0 0;
+            background-size: cover;
+            position: absolute;
+        }
+        .box a .news .dt span {
+            display: block;
+            position: absolute;
+            transition: 0.8s;
+        }
+        .box a .news .dt span:nth-child(1) {
+            left: 15px;
+            top: 15px;
+            width: 0px;
+            height: 1px;
+            background: white;
+            opacity: 0;
+        }
+        .box a:hover .news .dt span:nth-child(1) {
+            width: 470px;
+            opacity: 1;
+        }
+        .box a .news .dt span:nth-child(2) {
+            right: 15px;
+            top: 15px;
+            width: 1px;
+            height: 0px;
+            background: white;
+            opacity: 0;
+        }
+        .box a:hover .news .dt span:nth-child(2) {
+            height: 520px;
+            opacity: 1;
+        }
+        .box a .news .dt span:nth-child(3) {
+            left: 15px;
+            bottom: 15px;
+            width: 0px;
+            height: 1px;
+            background: white;
+            opacity: 0;
+        }
+        .box a:hover .news .dt span:nth-child(3) {
+            width: 470px;
+            opacity: 1;
+        }
+        .box a .news .dt span:nth-child(4) {
+            left: 15px;
+            top: 15px;
+            width: 1px;
+            height: 0px;
+            background: white;
+            opacity: 0;
+        }
+        .box a:hover .news .dt span:nth-child(4) {
+            height: 520px;
+            opacity: 1;
+        }
+        .box a .news .dt span:nth-child(5) {
+            left: 70px;
+            top: 300px;
+            width: 180px;
+            height: 1px;
+            background: white;
+            opacity: 0.5;
+            transition: 1s;
+        }
+        .box a:hover .news .dt span:nth-child(5) {
+            opacity: 0;
+        }
+        .box a .news .dt span:nth-child(6) {
+            left: 70px;
+            top: 300px;
+            width: 0px;
+            height: 1px;
+            background: white;
+            opacity: 0;
+            transition: 1s;
+        }
+        .box a:hover .news .dt span:nth-child(6) {
+            width: 180px;
+            opacity: 1;
+        }
+        .box a .news strong {
+            color: white;
+            display: block;
+            left: 0;
+            top: 0;
+            font-size: 35px;
+            margin: 70px;
+        }
+        .box a .news .dt {
+            display: inline;
+        }
+        .box a .news .dt p {
+            display: inline;
+            color: white;
+            margin-top: 70px;
+            margin-left: 70px;
+            margin-right: 10px;
+            padding-bottom: 10px;
+            font-size: 30px;
+            font-weight: 700;
+        }
+        .box a .news .dt p em {
+            display: inline;
+            color: white;
+            font-size: 20px;
+        }
+
+    </style>    
+</head>
+<body>
+    <div class="con-box">
+        <div class="box">
+                <a href="https://www.sk.co.kr/ko/media/news.jsp">
+                    <div class="news">
+                        <strong>SK의 다양한 소식을<br>전합니다</strong>
+                        <div class="dt">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <p>SK뉴스
+                              <em>바로가기</em>
+                            </p>
+                        </div>
+                    </div>
+                </a>
+        </div>
+    </div>
+</body>
+</html>
