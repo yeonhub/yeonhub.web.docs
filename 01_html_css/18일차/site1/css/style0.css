@@ -1,0 +1,28 @@
+.con-box { width: 750px; height: 340px; padding: 30px; box-sizing: border-box; margin:100px auto; background: #efefef; } 
+
+.con1 .list {  } 
+.con1 .list li { } 
+.con1 .list li.on {  } 
+.con1 .box {  } 
+.con1 .box article {  } 
+.con1 .box article:first-child {  }
+.con1 .box article ul {} 
+.con1 .box article ul li {  } 
+.con1 .box article ul li a {} 
+.con1 .box article ul li span { } 
+.con1 .box article .more { } 
+.con1 .box article .more i {  } 
+
+
+.con2 .list {  } 
+.con2 .list li { } 
+.con2 .list li.on {  } 
+.con2 .box {  } 
+.con2 .box article {  } 
+.con2 .box article:first-child {  }
+.con2 .box article ul {} 
+.con2 .box article ul li {  } 
+.con2 .box article ul li a {} 
+.con2 .box article ul li span { } 
+.con2 .box article .more { } 
+.con2 .box article .more i {  } 
