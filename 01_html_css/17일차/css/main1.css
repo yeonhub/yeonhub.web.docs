@@ -1,0 +1,249 @@
+.inner {
+    width: 1400px;
+    margin: auto;
+    position: relative;
+    box-sizing: border-box;
+}
+
+
+/* min-width : 최소 max-width : 최대 */
+/* min-width : 최소 1600보다 작으면 스크롤바 */
+
+div {}
+
+div#wrap {
+    width: 100%;
+    min-width: 1600px;
+}
+
+header {}
+
+header#header {
+    width: 100%;
+    background: antiquewhite;
+}
+
+header#header div {}
+
+header#header div.inner {
+    /* width: 1400px; */
+    /* margin: auto; */
+    height: 150px;
+    /* position: relative; */
+    background: lavender;
+    /* box-sizing: border-box; */
+}
+
+header#header h1 {
+    position: absolute;
+    left: 0;
+    top: 50px;
+}
+
+header#header ul {}
+
+header#header ul.top-menu {
+    position: absolute;
+    right: 0;
+    top: 10px;
+}
+
+header#header ul.top-menu li {
+    display: inline-block;
+    margin-left: 20px;
+    position: relative;
+}
+
+header#header ul.top-menu li::after {
+    content: "";
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    background: tomato;
+    margin-left: 10px;
+    top: 10px;
+    ;
+}
+
+header#header ul.top-menu li:last-child::after {
+    display: none;
+}
+
+header#header ul.top-menu li a {
+    font-size: 14px;
+}
+
+header#header nav {}
+
+header#header nav.nav {
+    position: absolute;
+    right: 0;
+    top: 65px;
+}
+
+header#header ul {}
+
+header#header ul.gnb {
+    display: flex;
+}
+
+header#header ul.gnb li {
+    margin-left: 70px;
+}
+
+header#header ul.gnb li a {
+    font-size: 18px;
+    font-weight: 700;
+    transition: 0.5s;
+    /* all, ease 기본값 */
+}
+
+header#header ul.gnb li a:hover {
+    color: tomato;
+}
+
+section {}
+
+section#visual {
+    position: relative;
+    width: 100%;
+    height: 750px;
+}
+
+section#visual ul {}
+
+section#visual ul.main-banner {
+    position: relative;
+    width: 100%;
+    height: 750px;
+    over flow: hidden;
+}
+
+section#visual ul.main-banner li {
+    width: 100%;
+    height: 750px;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: cover;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+}
+
+section#visual ul.main-banner li:nth-child(1) {
+    background-image: url(../images/main1.jpg);
+    display: block;
+}
+
+section#visual ul.main-banner li:nth-child(2) {
+    background-image: url(../images/main0.jpg);
+}
+
+section#visual ul.main-banner li:nth-child(3) {
+    background-image: url(../images/main2.jpg);
+}
+
+section#visual p {}
+
+section#visual p.btn-wrap {}
+
+section#visual p.btn-wrap button {}
+
+section#visual p.btn-wrap button.btn {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: none;
+    background: lightgray;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+section#visual p.btn-wrap button.prev {
+    left: 50px;
+}
+
+section#visual p.btn-wrap button.btn i {
+    font-size: 50px;
+}
+
+section#visual p.btn-wrap button.next {
+    right: 50px;
+}
+
+section#visual ul {}
+
+section#visual ul.paging {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+}
+
+section#visual ul.paging li {
+    width: 20px;
+    height: 20px;
+    background: gray;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+section#visual ul.paging li.on {
+    background: tomato;
+}
+
+.main .con-box {
+    width: 100%;
+}
+.main .con-box .inner {
+    /* width: 1400px; */
+    /* margin: auto; */
+    /* position: relative; */
+    /* box-sizing: border-box; */
+    padding: 100px 0;
+}
+
+.main .con-box h2 {
+    font-size: 50px;
+    text-align: center;
+    font-weight: 700;
+}
+.main .con1 {
+    background: lavender;
+}
+.main .con1 .inner {
+    background: lightcoral;
+    height: 700px;
+}
+.main .con2 {
+    background: lightblue;
+}
+.main .con2 .inner {
+    background: lightgoldenrodyellow;
+    height: 600px;
+}
+.main .con3 {
+    background: lightgreen;
+}
+.main .con3 .inner {
+    background: lightsalmon;
+    height: 800px;
+}
+
+footer {}
+footer#footer {
+    width: 100%;
+    background: lightpink;
+}
+footer#footer div {}
+footer#footer div.inner {
+    /* width: 1400px; */
+    height: 250px;
+    /* margin: auto; */
+    background: lightseagreen;
+}
+footer#footer div.inner h2 {}
