@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/reset.css">
+    <title>Document</title>
+</head>
+<style>
+    .box1 {
+        margin: 100px;
+        width: 1000px;
+        height: 1000px;
+        background: #ff6347;
+        box-sizing: border-box;
+    }
+    .box1 .inner {
+        display: inline-block;
+        margin: 280px;
+        width: 400px;
+        height: 600px;
+        background: white;
+        border-radius: 30px;
+        box-shadow: 0 0 20px black;
+
+    }
+    .box1 .inner .box {
+        height: 200px;
+        background-image: url(images/space-pattern.jpg);
+        background-repeat: no-repeat;
+        background-position: 0 -200px;
+        border-radius: 30px 30px 0 0;
+        position: relative;
+    }
+    .box1 .inner .box p {
+        width: 170px;
+        height: 170px;
+        overflow: hidden;
+        border-radius: 50%;
+        position: absolute;
+        left: 30%;
+        top: 50%;
+        box-shadow: 0 0 20px gray;
+        transition: 0.2s;
+    }
+    .box1 .inner .box p:hover {
+        transform: scale(1.1);
+    }
+    .box1 .inner p img {
+    }
+    .box1 .inner h2 {
+        display: block;
+        font-size: 40px;
+        font-weight: 700;
+        text-align: center;
+        margin-top: 100px;
+        margin-bottom: 20px;
+    }
+    .box1 .inner strong {
+        display: inline-block;
+        width: 300px;
+        height: 50px;
+        border-radius: 30px;
+        background: #ffd01a;
+        text-align: center;
+        font-size: 20px;
+        font-weight: 800;
+        line-height: 2.5;
+        margin-left: 50px;
+        transition: 0.2s;
+    }
+    .box1 .inner strong:hover {
+        transform: scale(1.1);
+        background: orange;
+    }
+    .box1 .inner span {
+        display: block;
+        margin: 30px;
+    }
+
+    /* // box2 */
+    .box2 {
+        margin: 100px;
+        width: 1000px;
+        height: 1000px;
+        box-sizing: border-box;
+        background: lightblue;
+    }
+    .box2 .inner2 {
+        width: 800px;
+        height: 600px;
+        background: rgb(21,21,96);
+background: linear-gradient(90deg, rgba(21,21,96,1) 0%, rgba(191,54,54,1) 100%);
+    }
+    .box2 .inner2 h2 {
+        color: white;
+    }
+    .box2 .inner2 p {
+        color: white;
+    }
+    .box2 .inner2 span {
+        display: inline-block;
+        width: 200px;
+        height: 50px;
+        background: white;
+    }
+    .box2 .inner2 .box {}
+    .box2 .inner2 .box img {
+        width: 500px;
+        height: 350px;
+    }
+</style>
+<body>
+    <div class="box1">
+        <div class="inner">
+            <div class="box">
+                <p>
+                    <img src="images/myprofile.jpg" alt="">
+                </p>
+            </div>
+            <h2>
+                공효진
+            </h2>
+            <strong>
+                Follow
+            </strong>
+            <span>
+                생의 있을 이상의 그들의 모래뿐일 따뜻한 충분히 이것이다.무엇을 그와 피가 있는 청춘을 구하지 싶이 투명하되인간은   뿐이다.
+            </span>
+        </div>
+    </div>
+    <!-- box1 -->
+    <div class="box2">
+        <div class="inner2">
+            <h2>Spidey</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo nam maxime eius, quibusdam expedita asperiores quod.</p>
+            <span>Read More</span>
+            <div class="box">
+                <img src="images/pic1.png" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

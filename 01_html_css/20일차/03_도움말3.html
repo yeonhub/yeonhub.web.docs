@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    
+    <style>
+        .box {
+            width: 300px;
+            height: 200px;
+            background: tan;
+            border-radius: 15px;
+            margin: 50px auto;
+            color: white;
+            text-align: center;
+            line-height: 200px;
+            font-size: 30px;
+            position: relative;
+            border: 5px solid #000;
+        }
+        .box1::after {
+            display: block;
+            content: "";
+            width: 0;
+            height: 0;
+            border-top: 40px solid tan;
+            border-right: 40px solid transparent;
+            position: absolute;
+            left: 30%;
+            top: -20px;
+            transform: rotate(45deg);
+        }
+        .box1::before {
+            display: block;
+            content: "";
+            width: 0;
+            height: 0;
+            border-top: 40px solid black;
+            border-right: 40px solid transparent;
+            position: absolute;
+            left: 30%;
+            top: -25px;
+            transform: rotate(45deg);
+        }
+
+    </style>    
+</head>
+<body>
+    <div class="box box1">박스</div>
+    <pre>
+        before가 먼저 생성되므로 after 밑에 깔림
+        before를 크게 만들거나 absolute 절대위치를 조절해서 테두리 처럼 사용
+    </pre>
+</body>
+</html>
