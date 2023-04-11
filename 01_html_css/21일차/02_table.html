@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">   
+    <style>
+        td {
+            border: 1px solid #000;
+            width: 100px;
+            height: 50px;
+            text-align: center;
+        }
+        table {
+            margin: 50px;
+        }
+    </style>
+      
+</head>
+<body>
+    <table>
+        <caption class="hide"></caption>
+        <tr>
+            <td colspan="2">1</td>
+            <td colspan="2">2</td>
+        </tr>
+        <tr>
+            <td colspan="3">5</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td>10</td>
+            <td>11</td>
+            <td>12</td>
+        </tr>
+    </table>
+
+    <!-- //주석 -->
+    <hr>
+
+    <!-- table>tr*4>td*5 -->
+    <table>
+        <tr>
+            <td rowspan="2">1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td>11</td>
+            <td rowspan="2">12</td>
+            <td>13</td>
+            <td>14</td>
+            <td>15</td>
+        </tr>
+        <tr>
+            <td>16</td>
+            <td>18</td>
+            <td>19</td>
+            <td>20</td>
+        </tr>
+    </table>
+</body>
+</html>
