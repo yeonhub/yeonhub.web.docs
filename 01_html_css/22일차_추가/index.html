@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">   
+    <style>
+        .box {
+            width: 100%;
+            overflow: hidden;
+
+        }
+        .box .bg {
+            position: relative;
+            margin: auto;
+            width: 1920px;
+            height: 800px;
+            background-image: url(./images/bg.jpg);
+            background-repeat: no-repeat;
+            background-position: 0 0;
+        }
+        .box .bg .t1 {
+            position: absolute;
+            top: 200px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .box .bg .t2 img {
+            position: absolute;
+            top: 300px;
+            left: 550px;
+            animation: anit2 2s;
+        }
+        .box .bg .f1 {
+            position: absolute;
+            top: 350px;
+            left: 270px;
+            opacity: 1;
+            animation: anif1 3s;
+        }
+        .box .bg .f2 {
+            position: absolute;
+            top: 0;
+            right: 0;
+            opacity: 1;
+            animation: anif2 3s;
+        }
+        @keyframes anit2 {
+            0% {
+            top: 300px;
+            left: 550px;
+            transform: scale(2);
+            opacity: 0;
+                
+            }
+            100% {
+            top: 300px;
+            left: 550px;
+            transform: scale(1);
+            opacity: 1;
+            }
+        }
+        @keyframes anif1 {
+            0% {
+                top: 150px;
+                left: 150px;
+                opacity: 0;
+            }
+            50% {
+                top: 150px;
+                left: 150px;
+                opacity: 0;
+                rotate: -45deg;
+            }
+            100%{
+                opacity: 1;
+            }
+        }
+        @keyframes anif2 {
+            0% {
+                top: -300px;
+                right: 0px;
+                opacity: 0;
+            }
+            50% {
+                top: -300px;
+                right: 0px;
+                rotate: 45deg;
+                opacity: 0;
+            }
+            100%{
+                opacity: 1;
+            }
+            
+        }
+    </style>
+      
+</head>
+<body>
+    <div class="box">
+        <div class="bg">
+            <div class="t1"><img src="./images/txt1.png" alt=""></div>
+            <div class="t2"><img src="./images/txt2.png" alt=""></div>
+            <div class="f1"><img src="./images/flower1.png" alt=""></div>
+            <div class="f2"><img src="./images/flower2.png" alt=""></div>
+        </div>
+    </div>
+</body>
+</html>
