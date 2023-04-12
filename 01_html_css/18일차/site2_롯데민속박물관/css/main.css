@@ -78,6 +78,76 @@
 }
 #container {}
 #content {}
+
+#visual {
+	width: 100%;
+	position: relative;
+	height: 720px;
+}
+#visual .main-banner {
+	width: 100%;
+	position: relative;
+	height: 720px;
+	overflow: hidden;
+}
+#visual .main-banner li {}
+#visual .main-banner li:nth-child(1) {
+	background-image: url(../images/201902220555000140.jpg);
+	width: 100%;
+	height: 720px;
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	background-size: cover;
+	position: absolute;
+}
+#visual .main-banner li:nth-child(2) {
+	background-image: url(../images/202005111050316900.jpg);
+	width: 100%;
+	height: 720px;
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	background-size: cover;
+	position: absolute;
+}
+#visual .main-banner li:nth-child(3) {
+	background-image: url(../images/202005130508091810.jpg);
+	width: 100%;
+	height: 720px;
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	background-size: cover;
+	position: absolute;
+}
+#visual p {
+	width: 100%;
+	top: 50%;
+	transform: translateY(-50%);
+	position: absolute;
+	display: flex;
+	justify-content: space-between;
+	
+}
+#visual p .btn {
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	border: 1px solid white;
+	background: none;
+	
+}
+#visual p .prev {
+	margin-left: 50px;
+}
+#visual p .next {
+	margin-right: 50px;
+}
+#visual p .btn i {
+	color: white;
+	font-size: 50px;
+}
+#visual p .paging {}
+#visual p .paging .on{}
+
 .main {}
 .main .con-box {
 	width: 100%;
