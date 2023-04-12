@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <style>
+        select {
+            width: 250px;
+            height: 50px;
+            border: 1px solid #000;
+            appearance: none;
+            padding: 0 20px;
+        }
+        .box2 {
+            background-repeat: no-repeat;
+            background-position: 210px 50%;
+            background-image: url(images/select-bg.gif);
+        }
+        .box1, .box3 {
+            width: 250px;
+            height: 50px;
+            margin: 30px;
+            position: relative;
+        }
+        .box1 button {
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            background-repeat: 50%;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+        }
+        .box1 button i {
+            font-size: 18px;
+            line-height: 25px;
+        }
+        .box3::after {
+            content: "\ea36";
+            font-family: xeicon!important;
+            display: inline-block;
+            speak: none;
+            font-style: normal;
+            font-weight: 400;
+            font-variant: normal;
+            text-transform: none;
+            line-height: 1;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            border: 1px solid black;
+            padding: 5px;
+            border-radius: 20%;
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<div class="box1">
+    <select name="" id="">
+        <option>네이버</option>
+        <option>다음</option>
+        <option>구글</option>
+        <option>아마존</option>
+    </select>
+    <button>
+        <i class="xi-tag"></i>
+    </button>
+</div>
+
+    <select name="" id="" class="box2">
+        <option>네이버</option>
+        <option>다음</option>
+        <option>구글</option>
+        <option>아마존</option>
+    </select>
+
+    <div class="box3">
+        <select name="" id="">
+            <option>네이버</option>
+            <option>다음</option>
+            <option>구글</option>
+            <option>아마존</option>
+        </select>
+    </div>
+
+</body>
+
+</html>
