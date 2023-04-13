@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/reset.css">
+    <title>Document</title>
+    <script>
+        'use strict';
+        
+        let num=prompt(`입력하세요.`);
+        const make=(num)=>{
+            return num;
+        }
+        if(num.length==1){
+            document.write(`결과: `+`0`+`${num}`);
+            } else {
+                document.write(`결과: `+`${num}`);
+            }
+
+        make();
+    </script>
+</head>
+<body>
+    <pre>
+        1. 함수 : make 매개변수(num) return
+        2. 인자 : '7'  - 값이 1자리면  결과에 0을 붙여준다
+        결과 : 07
+        2. 인자 : '22'
+        결과 : 22
+    </pre>
+</body>
+</html>

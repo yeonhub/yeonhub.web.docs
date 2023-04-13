@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/reset.css">
+    <title>Document</title>
+    <script>
+        'use strict';
+        const car = {
+            name : '머스탱',
+            color : 'black',
+            price : '50000',
+            start : function(x){
+                if(x=='on'){
+                    alert(`${this.name} 시동 ${x}`);
+                } else if(x=='off') {
+                    alert(`${this.name} 시동 ${x}`);
+                }
+            }
+        };
+        document.write(`이름 : ${car.name} <br>`);
+        document.write(`색상 : ${car.color} <br>`);
+        document.write(`가격 : ${car.price} <br>`);
+        document.write(`-----------------------<br>`);
+
+        car.start('on')
+        
+    </script>
+</head>
+<body>
+    <pre>
+        
+    </pre>
+</body>
+</html>

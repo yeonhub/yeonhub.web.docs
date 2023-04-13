@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/reset.css">
+    <title>Document</title>
+    <script>
+        'use strict';
+        let cat = {
+            name : '피카츄',
+            age : 3,
+            color : '흰색',
+            food : '츄르',
+
+            // this - 객체 자기 자신(cat)
+            eat : function(){
+                document.write(`${this.name}는 ${this.food}을 먹는다 <br>`);
+            },
+            sleep : function(){
+                document.write(`${this.name}는 잠을 잔다 <br>`);
+            },
+            run : function(){
+                document.write(`${this.name}는 달린다 <br>`);
+            }
+        }
+        document.write(`이름 : ${cat.name} <br>`);
+        document.write(`나이 : ${cat.age} <br>`);
+        document.write(`색상 : ${cat.color} <br>`);
+        document.write(`음식 : ${cat.food} <br>`);
+        document.write(`-----------------------<br>`);
+
+        // 메서드 : 객체.메서드()
+        // 함수() : 객체가 존재하지 않는다
+
+        cat.eat();
+        cat.sleep();
+        cat.run();
+    </script>
+</head>
+<body>
+    <pre>
+        
+    </pre>
+</body>
+</html>
