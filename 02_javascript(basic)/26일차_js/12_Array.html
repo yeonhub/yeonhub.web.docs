@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <title>Document</title>
+    <style>
+        .box{
+            border: 1px solid #000;
+            padding: 20px;
+            width: 300px;
+            margin: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        xxx
+    </div>
+<!--     <script>
+        'use strict';
+        let msg = '';
+        msg += 'red <br>';
+        msg += 'green <br>';
+        msg += 'blue <br>';
+        msg += 'black <br>';
+        msg += 'white <br>';
+
+        document.querySelector('.box').innerHTML=msg;
+    </script> -->
+    
+<!--     <script>
+        'use strict';
+        let arr=[];
+        arr.push('red');
+        arr.push('green');
+        arr.push('blue');
+        arr.push('black');
+        arr.push('white');
+        arr.join('<br>')
+        document.querySelector('.box').innerHTML=arr.join('<br>');
+        
+    </script> -->
+    <script>
+        'use strict';
+        let color = 'red, green, blue, black, white';
+        let arr = color.split(',')
+        document.querySelector('.box').innerHTML=arr.join('<br>');
+    </script>
+</body>
+</html>
