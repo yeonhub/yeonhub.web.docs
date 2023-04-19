@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <style>
+        .box {margin: 20px auto; width: 800px; }
+        .box table { width: 100%; }
+        .box table caption{ display: none; }
+        .box table .w1{ width: 80px;  }
+        .box table .w2{ width: 120px; }
+        .box table .w3{ width: 120px; }
+        .box table .w4{ width: 120px; }
+        .box th , .box td { border: 1px solid #000; height: 50px; vertical-align: middle; text-align: center; font-size: 15px; }
+        .box th  { border-bottom: none; border-top: 2px solid #000; background: #EFEFEF;   font-size: 16px; font-weight: 500; }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <table>
+            <caption>신상명세서</caption>
+            <colgroup>
+                <col class="w1">
+                <col class="w2">
+                <col class="w3">
+                <col class="w4">
+                <col class="w5">
+            </colgroup>
+            <thead>
+                <tr>
+                    <th scope="col">번호</th>
+                    <th scope="col">이름</th>
+                    <th scope="col">나이</th>
+                    <th scope="col">주소</th>
+                    <th scope="col">설명</th>
+                </tr>
+            </thead>
+            <tbody class="tbody">
+            </tbody>
+        </table>
+    </div>
+    <script>
+        let data = [
+            {id:1, name:'유재석', age:30, addr:'서울', msg:'나는 고양이를 키웁니다.'},
+            {id:2, name:'정준하', age:40, addr:'서울', msg:'나는 강아지를 키웁니다.'},
+            {id:3, name:'정형돈', age:20, addr:'인천', msg:'나는 고슴도치를 키웁니다.'},
+            {id:4, name:'권지용', age:10, addr:'수원', msg:'나는 앵무새를 키웁니다.'},
+            {id:5, name:'하하', age:20, addr:'부천', msg:'나는 거북이를 키웁니다.'},
+            {id:6, name:'노홍철', age:30, addr:'성남', msg:'나는 토끼를 키웁니다.'}
+        ]
+        let dom = document.querySelector('.tbody');
+        let x = '';
+
+        let data2 = data.map((a, b)=>{
+            return (
+                `<tr>
+                    <td>${a.id}</td>
+                    <td>${a.name}</td>
+                    <td>${a.age}</td>
+                    <td>${a.addr}</td>
+                    <td>${a.msg}</td>
+                </tr>`
+            )
+        })
+        dom.innerHTML = data2.join('');
+    </script>
+</body>
+</html>

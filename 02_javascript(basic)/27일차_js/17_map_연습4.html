@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <title>Document</title>
+</head>
+<style>
+    .box {
+        margin: 30px;
+    }
+    .box p {
+        border: 1px solid #000;
+        width: 200px;
+        line-height: 50px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+</style>
+<body>
+    <div class="box">
+        <!-- <p>xxx</p> -->
+    </div>
+    <script>
+        let arr = [10, 20, 30, 40, 50];
+        let dom = document.querySelector('.box');
+        let x = '';
+
+        for(let i=0; i<arr.length; i++){
+            x += '<p>'+arr[i]+'</p>';
+        }
+        for(let a of arr){
+            x += '<p>'+a+'</p>';
+        }
+        let arr2 = arr.map(b=>{
+            return `<p>${b}</p>`;
+        })
+
+        dom.innerHTML = x;
+        dom.innerHTML = arr2;
+        
+    </script>
+</body>
+</html>
