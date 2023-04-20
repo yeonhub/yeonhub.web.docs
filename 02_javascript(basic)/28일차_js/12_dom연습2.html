@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <title>Document</title>
+<style>
+    body {
+        margin: 30px;
+    }
+</style>
+</head>
+<body>
+    <ul>
+        <li>list</li>
+        <li>list</li>
+        <li>list</li>
+        <li>list</li>
+        <li>list</li>
+    </ul>
+    <script>
+        'use strict';
+        let arr = ['사과', '포도', '딸기', '수박', '멜론']
+        let li = document.getElementsByTagName('li');
+        console.log(li);
+        
+        for(let i=0; i<arr.length; i++){
+            li[i].innerHTML = arr[i]
+        }
+/*         li[0].innerHTML = '사과'
+        li[1].innerHTML = '포도'
+        li[2].innerHTML = '딸기'
+        li[3].innerHTML = '수박'
+        li[4].innerHTML = '멜론' */
+
+        for(let i=0; i<arr.length; i++){
+           li[i].style.fontSize = '30px';
+           li[i].style.width = '200px';
+           li[i].style.height = '50px';
+           li[i].style.marginBottom = '10px';
+           li[i].style.border = '1px solid black';
+           li[i].style.textAlign = 'center';
+        }
+/*         li[0].style.fontSize = '30px';
+        li[0].style.width = '200px';
+        li[0].style.height = '50px';
+        li[0].style.marginBottom = '10px';
+        li[0].style.border = '1px solid black';
+        li[0].style.textAlign = 'center'; */
+
+    </script>
+    <pre>
+        document.getElementsByTagName('태그명');
+        getElements : 복수(배열로 처리됨)
+    </pre>
+</body>
+</html>

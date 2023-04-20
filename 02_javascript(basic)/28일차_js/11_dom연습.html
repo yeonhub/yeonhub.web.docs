@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <title>Document</title>
+<style>
+    body {
+        margin: 30px;
+    }
+</style>
+</head>
+<body>
+    <div id="box1">제목1</div>
+    <div id="box1">제목2</div>
+    <div id="box1">제목3</div>
+    <script>
+        'use strict';
+        let dom = document.getElementById('box1');
+        dom.style.backgroundColor = 'tan';
+        dom.style.width = '200px';
+        dom.style.height = '50px';
+        dom.style.lineHeight = '50px';
+        dom.style.textIndent = '20px';
+        dom.style.fontSize = '20px';
+        dom.style.color = 'white';
+        dom.innerHTML = '타이틀';
+        dom.style.margin = 'auto';
+        dom.style.textAlign = 'center';
+    </script>
+    <pre>
+        document.getElementById('아이디명')
+        선택자.style.속성 = '값';
+
+        속성
+        font-size : fontSize
+        background-color : backgroundColor
+    </pre>
+</body>
+</html>
