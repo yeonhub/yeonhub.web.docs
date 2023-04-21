@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <title>Document</title>
+<style>
+    
+</style>
+</head>
+<body>
+    <p class="box1">test</p>
+    <p class="box1">test</p>
+    <p class="box1">test</p>
+    <p class="box1">test</p>
+    <script>
+        'use strict';
+        let p = document.getElementsByClassName('box1');
+        console.log(p);
+
+        for(let i=0; i<p.length; i++){
+            p[i].innerHTML = `.box1의 [${i}]번째`;
+            p[i].style.width = '100px';
+            p[i].style.height = '30px';
+            p[i].style.background = 'tan';
+            p[i].style.margin = '30px';
+        }
+    </script>
+</body>
+</html>

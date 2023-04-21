@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <title>Document</title>
+<style>
+    body {
+        font-size: 20px;
+        margin: 20px;
+    }
+    .name {
+        display: none;
+    }
+</style>
+</head>
+<body>
+    <p id="txt1">xx</p>
+    <p id="txt2">xx</p>
+    <p id="txt3">xx</p>
+
+    <h2 class="txt">안녕하세요 <span class="name">만나서 반갑습니다.</span></h2>
+    <script>
+        'use strict';
+        let txt1 = document.querySelector('#txt1');
+        let txt2 = document.querySelector('#txt2');
+        let txt3 = document.querySelector('#txt3');
+        
+        let txt = document.querySelector('.txt');
+
+        txt1.innerHTML = '<a href="http://www.google.com">google</a>'
+        txt2.innerHTML = '<a href="http://www.google.com">google</a>'
+        txt3.innerHTML = '<a href="http://www.google.com">google</a>'
+
+        console.log(txt.innerHTML);
+        console.log(txt.innerText);
+        console.log(txt.textContent);
+    </script>
+    <pre>
+        setter : 값 지정
+        선택자.innerHTML = '값'
+        선택자.innerText = '값'
+        선택자.textContent = '값'
+
+        getter : 값 꺼내오기
+        선택자.innerHTML
+        선택자.innerText
+        선택자.textContent
+    </pre>
+</body>
+</html>

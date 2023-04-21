@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <title>Document</title>
+<style>
+    a {
+        font-size: 50px;
+    }
+</style>
+</head>
+<body>
+    <a href="">xx</a>
+
+    <script>
+        'use strict';
+        let a = document.querySelector('a');
+        a.href = 'http://www.google.com';
+        a.target = '_blank';
+        a.title = '설명입니다';
+        a.textContent = '구글입니다';
+        a.class = 'test'; // 클래스는 추가 안됨
+        a.id = 'testid'; // 아이디 추가 가능
+
+    </script>
+    <pre>
+        HTML DOM : set
+        <태그 속성>
+        요소.속성 = '값'
+    </pre>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <title>Document</title>
+<style>
+    .box {
+        width: 500px;
+        border: 1px solid #000;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        font-size: 18px;
+        margin: 10px;
+    }    
+    .box span {
+        color: white;
+        background: tan;
+    }
+    button {
+        margin: 10px;
+        padding: 20px;
+    }
+</style>
+</head>
+<body>
+    <div class="box">
+        xxx
+    </div>
+    <p>
+        <button onclick="make1()">innerHTML</button>
+        <button onclick="make2()">innerText</button>
+        <button onclick="make3()">innerContent</button>
+    </p>
+    <script>
+        'use strict';
+        let dom = document.querySelector('.box');
+        let btn1 = document.querySelector('button:nth-child(1)');
+        let btn2 = document.querySelector('button:nth-child(2)');
+        let btn3 = document.querySelector('button:nth-child(3)');
+        const make1=()=>{
+            dom.innerHTML = '안녕하세요 <span> 만나서 반갑습니다. </span>';
+        }
+        const make2=()=>{
+            dom.innerText = '안녕하세요 <span> 만나서 반갑습니다. </span>';
+        }
+        const make3=()=>{
+            dom.innerContent = '안녕하세요 <span> 만나서 반갑습니다. </span>'
+        }
+    </script>
+    <pre>
+        .innerHTML : 텍스트 + html
+        .innerText : 텍스트
+        .innerContent : 텍스트
+    </pre>
+</body>
+</html>

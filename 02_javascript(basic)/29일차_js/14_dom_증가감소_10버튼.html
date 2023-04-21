@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <title>Document</title>
+<style>
+    body {
+        margin: 30px;
+    }
+    .box {
+        width: 300px;
+        height: 60px;
+        border: 1px solid #000;
+        font-size: 30px;
+        line-height: 2;
+        text-align: center;
+        margin: 10px;
+    }
+    button {
+        width: 120px;
+        height: 45px;
+        margin: 20px;
+        font-size: 30px;
+    }
+</style>
+</head>
+<body>
+    <div class="box">xxx</div>
+    <p>
+        <button class="prev">-</button>
+        <button class="next">+</button>
+    </p>
+    <script>
+        'use strict';
+        let dom = document.querySelector('.box');
+        let prev = document.querySelector('.prev');
+        let next = document.querySelector('.next');
+        let cnt = 0;
+
+        dom.innerHTML = cnt;
+        // 10이 안넘게
+        next.addEventListener('click', ()=>{
+            if(cnt<10){
+                cnt++;
+                dom.innerHTML = cnt;
+            }
+        })
+        // 0보다 안작게
+        prev.addEventListener('click', ()=>{
+            if(cnt>0){
+                cnt--;
+                dom.innerHTML = cnt;
+            }
+        })
+    </script>
+</body>
+</html>

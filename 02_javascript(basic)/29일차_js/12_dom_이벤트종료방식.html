@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <title>Document</title>
+<style>
+    body {
+        margin: 30px;
+    }
+    button {
+        padding: 20px;
+    }
+</style>
+</head>
+<body>
+    <p>
+        <button onclick="make1()">확인</button>
+        <button class="btn1">확인1</button>
+        <button class="btn2">확인2</button>
+        <button class="btn3">확인3</button>
+        <button class="btn4">확인4</button>
+    </p>
+    <script>
+        'use strict';
+        const make1=()=>{
+            alert('과거 방식');
+        }
+
+        let btn1 = document.querySelector('.btn1')
+        btn1.onclick = function(){
+            alert('두번째 방식');
+        }
+
+        let btn2 = document.querySelector('.btn2')
+        btn2.addEventListener('click', function(){
+            alert('요즘 방식');
+        })
+
+        let btn3 = document.querySelector('.btn3')
+        btn3.addEventListener('click', ()=>{
+            alert('요즘 방식 화살표');
+        })
+
+        const make2=()=>{
+            alert('함수 호출 방식')
+        }
+        let btn4 = document.querySelector('.btn4')
+        btn4.addEventListener('click', make2)
+    </script>
+    <pre>
+
+    </pre>
+</body>
+</html>

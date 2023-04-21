@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <title>Document</title>
+<style>
+    body {
+        margin: 20px;
+    }
+    button {
+        padding: 50px;
+        margin: 20px;
+    }
+</style>
+</head>
+<body>
+    <div class="gallery">
+        <img src="images/베티.jpg" alt="">
+    </div>
+    <p>
+        <button class="prev">정지</button>
+        <button class="next">시작</button>
+    </p>
+    <script>
+        'use strict';
+        let img = document.querySelector('.gallery img');
+        let cnt = 0;
+        let prev = document.querySelector('.prev');
+        let next = document.querySelector('.next');
+        let timerId = null;
+        let interval = 1;
+        let isplay = true;
+
+        timerId=setInterval(make,1)
+        function make(){
+            cnt++
+            if(cnt===5){
+                cnt=0;
+            }
+            if(cnt===1){
+                img.setAttribute('src', 'images/뽀로로.jpg')
+            } else if(cnt===2){
+                img.setAttribute('src', 'images/루피.jpg')
+            } else if(cnt===3){
+                img.setAttribute('src', 'images/크롱.jpg')
+            } else if(cnt===4){
+                img.setAttribute('src', 'images/에디.jpg')
+            }
+        }
+        next.addEventListener('click', ()=>{
+            // if(isplay === false){
+            if(!isplay){
+                timerId = setInterval(make ,1);
+                isplay=true;
+            }
+        });
+        prev.addEventListener('click', ()=>{
+            // if(isplay === true){
+            if(isplay){
+                clearInterval(timerId);
+                isplay=false;
+            }
+        });
+    </script>
+    <pre>
+
+    </pre>
+</body>
+</html>

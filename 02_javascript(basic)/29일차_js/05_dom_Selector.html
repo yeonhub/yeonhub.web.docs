@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <title>Document</title>
+<style>
+    body {
+        margin: 30px;
+    }
+</style>
+</head>
+<body>
+    <h1 id="h1">xxx</h1>
+    <h2 class="h2">xxx</h2>
+    <h3 class="h2">xxx</h3>
+
+    <div class="box">
+        <ul>
+            <li>list</li>
+            <li>list</li>
+            <li>list</li>
+            <li>list</li>
+        </ul>
+    </div>
+    <script>
+        'use strict';
+        let h1 = document.querySelector('#h1');
+        h1.innerHTML = '제목1';
+        h1.style.background = 'tan';
+        h1.style.width = '100px';
+
+        let h2 = document.querySelectorAll('.h2');
+        console.dir(h2);
+
+        h2[0].innerHTML = '제목2';
+        h2[1].innerHTML = '제목3';
+
+        for(let i=0; i<h2.length; i++){
+            h2[i].innerHTML = '제목'
+        }
+        h2.forEach(function(item){
+            console.log(item);
+            item.innerHTML = '클래스';
+            item.style.color = 'blue';
+            item.style.background = 'gray';
+            item.style.width = '100px';
+
+        })
+        let box = document.querySelector('.box');
+        let ul = document.querySelector('.box ul');
+        let li = document.querySelectorAll('.box ul li'); // 모든 li 적용시 All
+
+        box.style.margin = '20px';
+        box.style.padding = '20px';
+        box.style.border = '2px solid black';
+
+        ul.style.padding = '15px';
+        ul.style.background = 'pink';
+
+    </script>
+    <pre>
+        Document.querySelector('css 선택자')
+        Document.querySelector('#아이디')
+        Document.querySelector('.클래스')
+        Document.querySelector('경로')
+        Document.querySelector('경로:nth-')
+        일치하는 첫 번째 요소를 반환 일치하는 요소가 없으면 null을 반환
+
+        Document.querySelectorAll()
+        일치하는 요소들을 반환
+    </pre>
+</body>
+</html>

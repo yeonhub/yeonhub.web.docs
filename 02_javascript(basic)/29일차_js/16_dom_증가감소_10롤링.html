@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <title>Document</title>
+<style>
+    body {
+        margin: 30px;
+    }
+    .box {
+        width: 300px;
+        height: 60px;
+        border: 1px solid #000;
+        font-size: 30px;
+        line-height: 2;
+        text-align: center;
+        margin: 10px;
+    }
+</style>
+</head>
+<body>
+    <div class="box">xxx</div>
+    <p>
+    </p>
+    <script>
+        'use strict';
+        // 0~10 롤링
+        let dom = document.querySelector('.box');
+        let cnt = 0;
+        setInterval(function(){
+            cnt++;
+            if(cnt>10){
+                cnt=0;
+            }
+            dom.innerHTML = cnt;
+        },1000)
+    </script>
+</body>
+</html>
