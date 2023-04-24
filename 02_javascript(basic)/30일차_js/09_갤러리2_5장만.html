@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <title>Document</title>
+<style>
+    .gallery {
+        width: 600px;
+        border: 1px solid #000;
+        margin: 20px auto;
+        padding: 20px;
+    }
+    .gallery img {
+        width: 600px;
+        height: 400px;
+    }
+    .gallery p {
+        margin-top: 20px;
+    }
+    .gallery p button {
+        width: 120px;
+        height: 50px;
+    }
+</style>
+</head>
+<body>
+    <div class="gallery">
+        <img src="images/img0.jpg" alt="">
+        <p>
+            <button class="prev">이전</button>
+            <button class="next">다음</button>
+        </p>
+    </div>
+    <script>
+        'use strict';
+        let pic = document.querySelector('.gallery img')
+        let prev = document.querySelector('.gallery .prev')
+        let next = document.querySelector('.gallery .next')
+        let cnt = 0;
+
+        const make1=()=>{
+            if(cnt<5){
+                cnt++;
+                pic.setAttribute('src', 'images/img'+cnt+'.jpg')
+            } 
+        }
+        const make2=()=>{
+            if(cnt>0){
+                cnt--;
+                pic.setAttribute('src', 'images/img'+cnt+'.jpg')
+            }
+        }
+
+        next.addEventListener('click', make1)
+        prev.addEventListener('click', make2)
+
+    </script>
+    <pre>
+
+    </pre>
+</body>
+</html>

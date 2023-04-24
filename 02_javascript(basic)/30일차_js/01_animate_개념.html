@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <title>Document</title>
+<style>
+    body {
+        margin: 30px;
+    }
+    pre {
+        margin-top: 200px;
+    }
+    div {
+        width: 100px;
+        height: 100px;
+        background: tan;
+        left: 150px;
+        top: 150px;
+        position: relative;
+    }
+</style>
+</head>
+<body>
+    <div></div>
+    <script>
+        'use strict';
+        let div = document.querySelector('div');
+
+        div.addEventListener('click', function(){
+            // 속성 : [값, 값, 값]
+            div.animate({
+                transform : ['translateX(0px) scale(1)',
+                'translateX(200px) scale(2)'],
+                backgroundColor : ['pink', 'orange'],
+            },3000)
+    })
+    </script>
+    <pre>
+        <!-- 함수 정의해서 사용 -->
+        const a = [
+            { transform: "rotate(0) scale(1)" },
+            { transform: "rotate(360deg) scale(0)" },
+            { transform: "rotate(0deg) scale(2)" },
+        ];
+
+        const b = {
+            duration: 2000,
+            iterations: 3,
+        };
+
+        div.addEventListener('click', function(){
+            div.animate(a,b);
+        });
+
+        <!-- 함수 없이 넣어서 사용 -->
+
+        div.addEventListener('click', function(){
+            div.animate([
+            { transform: "rotate(0) scale(1)" },
+            { transform: "rotate(360deg) scale(0)" },
+            { transform: "rotate(0deg) scale(1)" },
+        ],3000)
+        })
+
+        <!-- 다른 효과 추가 -->
+
+        div.addEventListener('click', function(){
+            div.animate([
+            { transform: "rotate(0) scale(1)", opacity : 0 },
+            { transform: "rotate(360deg) scale(0)", opacity : 1},
+            { transform: "rotate(0deg) scale(1)", opacity : 0.5},
+        ],3000)
+        })
+        
+        <!-- offset -->
+
+        div.addEventListener('click', function(){
+            // offset : 0~1 3초 = 1 (처음과 끝은 생략 가능)
+            div.animate([
+            { transform: "translateX(0px)", offset : 0},
+            { transform: "translateX(200px)", offset : 0.3},
+            { transform: "translateX(400px)", offset : 0.5},
+            { transform: "translateX(600px)", offset : 0.8},
+            { transform: "translateX(800px)", offset : 0.9},
+            { transform: "translateX(1000px)", offset : 1},
+        ],3000)
+        })
+
+        <!-- easing -->
+
+        let div = document.querySelector('div');
+
+        div.addEventListener('click', function(){
+            div.animate([
+            { transform: "translateX(0px)", easing : 'ease'},
+            { transform: "translateX(200px)", easing : 'ease-in'},
+            { transform: "translateX(400px)", easing : 'ease-in-out'}
+        ],3000)
+        })
+
+        <!-- 객체 형식 -->
+
+        div.addEventListener('click', function(){
+            // 속성 : [값, 값, 값]
+            div.animate({
+                transform : ['translateX(0px) scale(1)',
+                'translateX(200px) scale(2)'],
+                backgroundColor : ['pink', 'orange'],
+            },3000)
+    })
+    </pre>
+</body>
+</html>

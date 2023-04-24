@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <title>Document</title>
+<style>
+    body {
+        margin: 30px;
+    }
+    .con-box {
+        width: 300px;
+        border: 1px solid #000;
+        padding: 30px;
+        margin: 30px auto;
+        display: flex;
+        justify-content: space-between;
+        height: 200px;
+        cursor: pointer;
+    }
+    .con-box p {
+        width: 45%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .con-box p:nth-child(1) {
+        background: tan;
+    }
+    .con-box p:nth-child(2) {
+        background: lightsalmon;
+    }
+    .con-box p strong {
+        display: block;
+        background: lightpink;
+        width: 100px;
+        line-height: 50px;
+    }
+    .con-box p span {
+        display: block;
+        background: lightpink;
+        width: 100px;
+        line-height: 50px;
+    }
+    .con-box p {}
+</style>
+</head>
+<body>
+    <div class="con-box">
+        <p class="box1">
+            <strong>HELLO</strong>
+        </p>
+        <p class="box2">
+            <span>BYE</span>
+        </p>
+    </div>
+    <script>
+        'use strict';
+/*         let dom = document.querySelector('.con-box');
+        dom.addEventListener('click', function(e) {
+            console.log(this); // div
+        }) */
+
+/*         let dom = document.querySelector('.con-box');
+        dom.addEventListener('click', function(e) {
+            console.log(e.currentTarget); // 이벤트(click)가 걸려있는 대상
+        })
+ */
+
+        let dom = document.querySelector('.con-box');
+        dom.addEventListener('click', function(e) {
+            console.log(e.target); // 마우스가 이벤트(click)한 대상
+        })
+    </script>
+    <pre>
+        let dom = document.querySelector('.con-box');
+        dom.addEventListener('click', function(e) {
+            console.log(this); // div
+        })
+        ------------------------------------------------
+        let dom = document.querySelector('.con-box');
+        dom.addEventListener('click', function(e) {
+            console.log(e.currentTarget); // 이벤트(click)가 걸려있는 대상
+        })
+        ------------------------------------------------
+        let dom = document.querySelector('.con-box');
+        dom.addEventListener('click', function(e) {
+            console.log(e.target); // 마우스가 이벤트(click)한 대상
+        })
+        
+    </pre>
+</body>
+</html>
