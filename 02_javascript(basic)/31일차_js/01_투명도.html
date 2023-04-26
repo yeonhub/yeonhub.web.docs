@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <title>Document</title>
+<style>
+    body {
+        margin: 30px;
+    }
+    .box {
+        width: 300px;
+        height: 100px;
+        border: 1px solid #000;
+        background: tan;
+        text-align: center;
+        font-size: 20px;
+        line-height: 5;
+    }
+    button {
+        padding: 20px;
+        margin: 10px;
+    }
+</style>
+</head>
+<body>
+    <div class="box">
+        xx
+    </div>
+    <p>
+        <button>감소</button>
+        <button>증가</button>
+    </p>
+    <script>
+        'use strict';
+        let dom = document.querySelector('.box');
+        let op = 1;
+        let prev = document.querySelector('button:nth-child(1)');
+        let next = document.querySelector('button:nth-child(2)');
+        
+        prev.addEventListener('click', ()=>{
+            op=op-0.1;
+            if(op>0.2){
+            dom.style.opacity=op
+            dom.innerHTML=op.toFixed(1);
+            }
+        })
+        next.addEventListener('click', ()=>{
+            op=op+0.1;
+            if(op<1){
+            dom.style.opacity=op
+            dom.innerHTML=op.toFixed(1);
+            }
+        })
+    </script>
+</body>
+</html>

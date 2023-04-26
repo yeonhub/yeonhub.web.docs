@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <title>Document</title>
+<style>
+    body {
+        margin: 30px;
+    }
+    div {
+        width: 200px;
+        height: 50px;
+        border: 1px solid #000;
+        margin: 10px;
+    }
+    strong {
+        font-size: 30px;
+    }
+    button {
+        width: 80px;
+        height: 40px;
+    }
+    .on1 { background: pink; border-radius: 50px; height: 150px; border-width: 10px;}
+    .on2 { background: red; border-radius: 50%; height: 200px;width: 200px; border-width: 1px;}
+</style>
+</head>
+<body>
+    <div>xxx</div>
+    <strong>xx</strong>
+    <p>
+        <button>add</button>
+        <button>remove</button>
+        <button>toggle</button>
+        <button>contains</button>
+        <button>replace</button>
+    </p>
+    <script>
+        'use strict';
+        let btn = document.querySelectorAll('button');
+        let dom = document.querySelector('div');
+        let strong = document.querySelector('strong');
+        let txt;
+
+        btn[0].addEventListener('click', e=>{
+            dom.classList.add('on1', 'on2');
+            strong.textContent=dom.classList;
+        });
+        btn[1].addEventListener('click', e=>{
+            dom.classList.remove('on2');
+            strong.textContent=dom.classList;
+        });
+        btn[2].addEventListener('click', e=>{
+            dom.classList.toggle('on1');
+            // 한번 클릭 시 add, 두번 클릭 시 remove
+            strong.textContent=dom.classList;
+        });
+        btn[3].addEventListener('click', e=>{
+            txt=dom.classList.contains('on1');
+            strong.textContent=txt;
+        });
+        btn[4].addEventListener('click', e=>{
+            dom.classList.replace('on1', 'on2');
+            // on1을 on2로 변경
+            strong.textContent=dom.classList;
+        });
+    </script>
+    <pre>
+
+        Element.classList 는 엘리먼트의 클래스 속성의 컬렉션인 활성 DOMTokenList를 반환하는 읽기 전용 프로퍼티이다.
+
+        classList 사용은 공백으로 구분된 문자열인 element.className을 통해 엘리먼트의 클래스 목록에 접근하는 방식을 대체하는 간편한 방법이다.
+
+        구문
+        const elementClasses = 
+        elementNodeReference.classList;
+        elementNodeReference.메서드();
+
+        메서드
+        add('클래스명') : 추가, 붙이기
+        지정한 클래스 값을 추가한다. 만약 추가하려는 클래스가 엘리먼트의 class 속성에 이미 존재한다면 무시한다.
+
+        remove('클래스명') : 제거
+
+        toggle('클래스명') : 두 가지 기능
+
+        contains('클래스명') : 존재하는지 확인(if문 사용)
+
+        replace(oldClass, newClass) : 새로운 클래스로 교체
+    </pre>
+</body>
+</html>

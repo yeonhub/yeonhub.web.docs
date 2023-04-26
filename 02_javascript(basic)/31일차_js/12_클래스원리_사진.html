@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <style>
+        .paging { margin: 50px; display: flex; }
+        .paging li { width: 40px; height: 40px; border:  1px solid #000; border-radius: 50%; background: #999; margin-right: 15px; cursor: pointer;}
+        .paging li.on { background: skyblue;}
+    </style>
+</head>
+<body>
+    <ul class="paging">
+        <li class="on"></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+    <img src="images/cat0.jpg" alt="">
+    <script>
+        let li = document.querySelectorAll('.paging li');
+        let pic = document.querySelector('img');
+        li[0].addEventListener('click', e => {
+            li.forEach(function(a, b){
+                li[b].classList.remove('on');
+            })
+            e.target.classList.add('on');
+            pic.setAttribute('src', 'images/cat'+0+'.jpg')
+        })
+        li[1].addEventListener('click', e => {
+            li.forEach(function(a, b){
+                li[b].classList.remove('on');
+            })
+            e.target.classList.add('on');
+            pic.setAttribute('src', 'images/cat'+1+'.jpg')
+        })
+        li[2].addEventListener('click', e => {
+            li.forEach(function(a, b){
+                li[b].classList.remove('on');
+            })
+            e.target.classList.add('on');
+            pic.setAttribute('src', 'images/cat'+2+'.jpg')
+        })
+        li[3].addEventListener('click', e => {
+            li.forEach(function(a, b){
+                li[b].classList.remove('on');
+            })
+            e.target.classList.add('on');
+            pic.setAttribute('src', 'images/cat'+3+'.jpg')
+        })
+    </script>
+    <pre>
+        https://www.hyundaigfholdings.co.kr/web/html/ko/MAIN/MAIN.html#none
+        비주얼 페이징부분 처리
+    </pre>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <title>Document</title>
+<style>
+    .paging {
+        margin: 50px;
+        display: flex;
+    }
+    .paging li {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: lightgray;
+        border: 3px solid lightgray;
+        margin-right: 15px;
+        cursor: pointer;;
+    }
+    .paging li.on {
+        background: gray;
+        border: 3px solid lightgray;
+    }
+</style>
+</head>
+<body>
+    <ul class="paging">
+        <li class="on"></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+    <script>
+        'use strict';
+        let li = document.querySelectorAll('.paging li');
+        for(let i=0; i<li.length; i++){
+            for(let j=0; j<li.length; j++){
+                li[i].addEventListener('click', e=>{
+                    li[j].classList.remove('on');
+                    e.target.classList.add('on');
+                })
+            }
+        }
+/*         
+        li[0].addEventListener('click', e=>{
+            e.target.classList.add('on');
+            li[1].classList.remove('on');
+            li[2].classList.remove('on');
+            li[3].classList.remove('on');
+        })
+        li[1].addEventListener('click', e=>{
+            e.target.classList.add('on');
+            li[0].classList.remove('on');
+            li[2].classList.remove('on');
+            li[3].classList.remove('on');
+        })
+        li[2].addEventListener('click', e=>{
+            e.target.classList.add('on');
+            li[1].classList.remove('on');
+            li[0].classList.remove('on');
+            li[3].classList.remove('on');
+        })
+        li[3].addEventListener('click', e=>{
+            e.target.classList.add('on');
+            li[1].classList.remove('on');
+            li[2].classList.remove('on');
+            li[0].classList.remove('on');
+        }) */
+    </script>
+    <pre>
+        https://www.hyundaigfholdings.co.kr/web/html/ko/MAIN/MAIN.html#none
+        비주얼 페이징 부분
+    </pre>
+</body>
+</html>
