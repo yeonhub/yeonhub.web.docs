@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <title>Document</title>
+<style>
+    .list {
+        margin: 50px;
+    }
+    .list li {
+        width: 250px;
+        height: 40px;
+        border: 1px solid #000;
+        text-align: center;
+        line-height: 2;
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+</style>
+</head>
+<body>
+    <ul class="list">
+<!--         <li>사과</li>
+        <li>딸기</li>
+        <li>포도</li>
+        <li>수박</li>
+        <li>오렌지</li> -->
+    </ul>
+    <script>
+        'use strict';
+        let arr = ['사과','딸기','포도','수박','오렌지'];
+        let dom = document.querySelector('.list');
+        let li = '';
+
+        for(let i=0; i<arr.length; i++){
+            li += `<li>${arr[i]}</li>`;
+        }
+        
+        dom.innerHTML = li;
+    </script>
+    <pre>
+
+    </pre>
+</body>
+</html>

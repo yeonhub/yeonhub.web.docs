@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <style>
+        body {
+            margin: 30px;
+        }
+        button {
+            padding: 20px
+        }
+        .con-box .img {
+            width: 600px;
+            height: 400px;
+            cursor: pointer;
+            margin-bottom: 20px;
+        }
+        .con-box .txt {
+            width: 600px;
+            height: 40px;
+            font-size: 20px;
+            line-height: 2;
+            padding: 0 15px;
+            border: 1px solid #000;
+            box-sizing: border-box;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="con-box">
+        <div class="img">
+            <img src="images/cat0.jpg" alt="">
+        </div>
+        <div class="txt">????</div>
+        <p>
+            <button class="prev">이전</button>
+            <button class="next">다음</button>
+        </p>
+    </div>
+    <script>
+        'use strict';
+        let arr = ['보라돌이', '뚜비', '나나', '뽀'];
+        let pic = document.querySelector('.con-box img');
+        let next = document.querySelector('.con-box .next');
+        let prev = document.querySelector('.con-box .prev');
+        let txt = document.querySelector('.con-box .txt');
+        let box = document.querySelector('.con-box .img');
+        let cnt = 0;
+        let size = arr.length;
+        let timer = null;
+        const interval = 3000;
+        let className = '';
+        const gallery = (btnName) => {
+            if (btnName === 'next') {
+                cnt++;
+                if (cnt > 3) {
+                    cnt = 0;
+                }
+            } else {
+                cnt--;
+                if (cnt < 0) {
+                    cnt = 3;
+                }
+            }
+            banner();
+        }
+        function banner() {
+            // 공통부분
+            pic.setAttribute('src', `images/cat${cnt}.jpg`);
+        }
+        next.addEventListener('click', e => {
+            className = e.target.getAttribute('class');
+            console.log(className);
+            // 자신의 클래스명
+            gallery(className);
+        });
+        prev.addEventListener('click', e => {
+            className = e.target.getAttribute('class');
+            console.log(className);
+            // 자신의 클래스명
+            gallery(className);
+        });
+    </script>
+</body>
+</html>

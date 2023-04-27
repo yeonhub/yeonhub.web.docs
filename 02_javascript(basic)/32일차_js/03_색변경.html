@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 30px;
+        }
+
+        .box {
+            display: inline-block;
+            width: 150px;
+            height: 100px;
+            border: 1px solid #000;
+            font-size: 20px;
+            line-height: 5;
+            text-align: center;
+            background: pink;
+        }
+
+        button {
+            width: 150px;
+            height: 40px;
+            margin-left: 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box box1"></div>
+    <p>
+        <button>확인</button>
+    </p>
+    <script>
+        'use strict';
+        let isColor = true;
+        let btn = document.querySelector('button');
+        let dom = document.querySelectorAll('.box')
+
+        btn.addEventListener('click', e => {
+            isColor ? dom.forEach(item => {
+                item.style.backgroundColor = 'pink', btn.innerHTML='pink';
+            }) : dom.forEach(item => {
+                item.style.backgroundColor = 'yellow', btn.innerHTML='yellow';
+            })
+            isColor = !isColor;
+        })
+    </script>
+</body>
+
+</html>
