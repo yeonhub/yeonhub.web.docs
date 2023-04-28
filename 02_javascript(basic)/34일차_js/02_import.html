@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <title>Document</title>
+<style>
+    body {
+        margin: 30px;
+    }
+</style>
+</head>
+<body>
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+    <script type="module">
+        'use strict';
+        // import 사용자정의변수
+        import data from './data/test.js';
+        console.log(data)
+        let li = document.querySelectorAll('ul li');
+        li.forEach((item, idx) => {
+            item.textContent = data[idx];
+        });
+    </script>
+    <pre>
+        1. export default 이름;
+        2. <script type="module">
+        3. import 사용자정의 from '경로';
+    </pre>
+</body>
+</html>

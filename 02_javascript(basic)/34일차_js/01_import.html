@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <title>Document</title>
+<style>
+    
+</style>
+</head>
+<body>
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+    <script>
+        'use strict';
+        let arr = ['1번','2번','3번','4번','5번'];
+        let li = document.querySelectorAll('ul li');
+        li.forEach((item, idx) => {
+            item.textContent = arr[idx];
+        });
+    </script>
+    <pre>
+
+    </pre>
+</body>
+</html>
