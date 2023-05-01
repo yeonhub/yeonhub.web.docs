@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <title>Document</title>
+<style>
+    h2 {
+        font-size: 40px;
+    }
+</style>
+</head>
+<body>
+    <h2>xx</h2>
+    <img src="images/cat0.jpg" alt="">
+    <div>xxx</div>
+
+    <p>
+        <a href="images/cat1.jpg" data-title="고양이사진" data-desc="고양이 세부설명 내용">
+            <img src="images/cat2.jpg" alt="" width="120px">
+        </a>
+    </p>
+    <script>
+        'use strict';
+        let link = document.querySelector('a');
+        let h2 = document.querySelector('h2');
+        let div = document.querySelector('div');
+        let pic = document.querySelector('p a img');
+
+        let txt1, txt2, imgurl;
+
+        link.addEventListener('click',e=>{
+            e.preventDefault();
+            txt1=e.currentTarget.dataset.title;
+            txt2=e.currentTarget.dataset.desc;
+            imgurl=e.currentTarget.getAttribute('href');
+            h2.textContent=txt1;
+            div.textContent=txt2;
+            pic.setAttribute('src', imgurl);
+        })
+
+
+    </script>
+</body>
+</html>

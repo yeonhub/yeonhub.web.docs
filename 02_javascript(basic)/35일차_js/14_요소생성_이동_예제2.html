@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <title>Document</title>
+<style>
+    div {
+        width: 300px;
+        padding: 10px;
+        border: 1px solid #000;
+        margin: 30px;
+    }
+</style>
+</head>
+<body>
+    <div>
+
+    </div>
+    <script>
+        'use strict';
+        let div = document.querySelector('div');
+
+        // 태그 생성
+        // document.createElement('태그')
+        let h2 = document.createElement('h2');
+        let txt = document.createTextNode('제목');
+        h2.append(txt)
+        div.append(h2)
+        h2.innerHTML = '다시 제목'
+
+    </script>
+    <pre>
+
+    </pre>
+</body>
+</html>

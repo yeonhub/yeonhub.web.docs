@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 30px;
+        }
+        .box {
+            width: 90%;
+            padding: 20px;
+            border: 1px solid #000;
+            margin: auto;
+            font-size: 20px;
+        }
+
+        p {
+            border-bottom: 1px solid #999;
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div data-name="하나" class="box">
+        하나
+        <div data-name="둘" class="box">
+            둘
+            <div data-name="셋" class="box">
+                셋
+            </div>
+        </div>
+    </div>
+
+    <div class="output">
+
+    </div>
+    <script>
+        'use strict';
+        let box = document.querySelectorAll('.box');
+        let output = document.querySelector('.output');
+        let txt = '';
+
+        const make=(e)=>{
+            txt += `<p>${e.currentTarget.dataset.name}</p>`;
+            output.innerHTML=txt;
+        }
+
+        box.forEach(item=>{
+            버블링 ('이벤트'), (이벤트, false)
+            item.addEventListener('click', make);
+            item.addEventListener('click', make, true);
+            하나-둘-셋(캡쳐링)
+            item.addEventListener('click', make, false);
+            셋-둘-하나
+            item.addEventListener('click', make, {catture:true});
+        })        
+
+    </script>
+    <pre>
+        이벤트 캡처링 :  상위에서 하위로 이벤트 전파
+        이벤트 버블링 : 하위에서 상위로 이벤트 전파
+    </pre>
+</body>
+
+</html>

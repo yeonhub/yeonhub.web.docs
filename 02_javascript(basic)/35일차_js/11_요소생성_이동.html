@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <title>Document</title>
+    <style>
+        .box {
+            text-align: center;
+            width: 400px;
+            border: 1px solid #000;
+            padding: 10px;
+        }
+        .box h2 {
+            font-size: 40px;
+            background: pink;
+        }
+        .box h3 {
+            font-size: 30px;
+            background: yellow;
+        }
+        .box h4 {
+            font-size: 20px;
+            background: skyblue;
+        }
+        .box p {
+            font-size: 16px;
+            background: orange;
+        }
+        .box span {
+            display: block;
+            font-size: 20px;
+            font-weight: 600;
+            color: tomato
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <h2>h2</h2>
+        <h3>h3</h3>
+        <h4>h4</h4>
+        <p>p</p>
+        <span>span span</span>
+        <img src="images/cat0.jpg" width="300" alt="">
+    </div>
+    <script>
+        'use strict';
+        let box = document.querySelector('.box');
+        let h2 = document.querySelector('.box h2');
+        let h3 = document.querySelector('.box h3');
+        let h4 = document.querySelector('.box h4');
+        let img = document.querySelector('.box img');
+        let p = document.querySelector('.box p');
+        let span = document.querySelector('.box span');
+
+        box.appendChild(h2);
+        box.appendChild(img);
+        box.appendChild(p);
+
+        // 맨 앞으로 이동
+        box.insertBefore(span, box.firstChild)
+
+        // 교체
+        box.replaceChild(span, p)
+    </script>
+    <pre>
+        노드로 사용(과거 사용했던 방식)
+
+        appendChild() : 부모 요소의 맨 뒤에 추가(생성) / 이동
+        부모.appendChild(자식) : 요소가 존재하면 이동
+        부모.appendChild(자식) : 요소 생성 후 부모 맨 뒤에 추가
+
+        removeChild() : 삭제(메모리에 존재, 완벽한 삭제 아님)
+        replaceChild(변경후, 변경전) : 변경
+        insertBefore() : 맨 앞으로 이동
+    </pre>
+</body>
+
+</html>
