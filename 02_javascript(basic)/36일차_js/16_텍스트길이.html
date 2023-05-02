@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 30px;
+        }
+
+        textarea {
+            vertical-align: top;
+            width: 300px;
+            border: 1px solid #000;
+        }
+    </style>
+</head>
+
+<body>
+    <textarea cols="300" rows="10" placeholder="문의글 남기기 " maxLength="50"></textarea>
+    <p>글자수</p>
+    <div>남은글자수 50</div>
+    <script>
+        let inp = document.querySelector('textarea');
+        let p = document.querySelector('p');
+        let txt = '', len = 0, size = 10, timerId;
+        p.textContent = len
+        inp.addEventListener('focus', e => {
+            timerId = setInterval(() => {
+                const length = inp.value.length
+                p.textContent = `글자수 : ${length}`
+            }, 50)
+        })
+        inp.addEventListener('blur', e => {
+            clearInterval(timerId)
+        })
+    </script>
+</body>
+
+</html>

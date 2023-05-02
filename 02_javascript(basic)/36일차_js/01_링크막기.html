@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <title>Document</title>
+    <style>
+        img {
+            width: 250px;
+        }
+</style>
+</head>
+<body>
+    <img src="images/cat0.jpg" alt="">
+    <img src="images/cat0.jpg" alt="">
+    <img src="images/cat0.jpg" alt="">
+    <script>
+        'use strict';
+        let imgs = document.querySelectorAll('img');
+        imgs.forEach(item =>{
+            item.addEventListener('contextmenu',e=>{
+                console.log('test');
+            })
+        })
+    </script>
+</body>
+</html>

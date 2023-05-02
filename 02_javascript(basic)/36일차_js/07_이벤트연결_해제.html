@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 30px;
+        }
+
+        h1 {
+            font-size: 50px;
+            user-select: none;
+        }
+
+        span {
+            font-size: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>클릭 수 : 0</h1>
+    <p>
+        <button class="btn1">이벤트</button>
+        <button class="btn2">제거</button>
+    </p>
+    <span>xxx</span>
+    <script>
+        'use strict';
+        let btn1 = document.querySelector('.btn1');
+        let btn2 = document.querySelector('.btn2');
+        let h1 = document.querySelector('h1');
+        let span = document.querySelector('span');
+        
+        let cnt = 0;
+        let isplay = false;
+
+        function increment(){
+            h1.textContent = `클릭 수 : ${cnt++}`;
+        }
+        btn1.addEventListener('click', e=>{
+            if(!isplay){
+            h1.addEventListener('click', increment);
+            span.textContent = `이벤트 연결`;}
+        })
+        btn2.addEventListener('click', e=>{
+            h1.removeEventListener('click', increment);
+            span.textContent = `이벤트 해제`;
+            isplay = true;
+        });
+    </script>
+</body>
+
+</html>
