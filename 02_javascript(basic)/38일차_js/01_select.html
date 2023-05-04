@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">   
+    <style>
+        body {
+          margin: 30px;
+        }
+        p {
+          font-size: 20px;
+          margin-top: 20px;
+        }
+    </style>
+      
+</head>
+<body>
+    <select>
+      <option>고양이</option>
+      <option>야옹이</option>
+      <option>애옹이</option>
+      <option>냥냥이</option>
+      <option>양옹잉</option>
+    </select>
+    <p>
+      선택 : xx
+    </p>
+    <script>
+      let sel = document.querySelector('select');
+      let p = document.querySelector('p');
+
+      // change, input
+      // sel.addEventListener('change', e=>{
+      //   let idx = e.currentTarget.selectedIndex;
+      //   console.log(idx);
+      //   p.textContent = `선택 ${e.currentTarget[idx].textContent}`;
+      // })
+      
+      // sel.addEventListener('change', e=>{
+      //   let current = e.currentTarget;
+      //   let idx = current.selectedIndex;
+      //   p.textContent = `선택 : ${current[idx].textContent}`;
+      // })
+
+      sel.addEventListener('change', e=>{
+        let current = e.currentTarget;
+        let options = current.options;
+        let idx = current.selectedIndex;
+        console.log(options);
+        p.textContent = `선택 : ${options[idx].textContent}`;
+      })
+    </script>
+    <pre>
+
+    </pre>
+</body>
+</html>

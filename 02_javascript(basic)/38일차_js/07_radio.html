@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <title>Document</title>
+<style>
+    body {
+      margin: 30px;
+    }
+</style>
+</head>
+<body>
+  <div>
+    <input type="radio" name="ani" value="고양이">고양이
+    <input type="radio" name="ani" value="야옹이">야옹이
+    <input type="radio" name="ani" value="애옹이">애옹이
+    <input type="radio" name="ani" value="냥냥이">냥냥이
+    <input type="radio" name="ani" value="양옹잉">양옹잉
+  </div>
+  <p>xxx</p>
+    <script>
+      'use strict';
+      // let rad = document.querySelectorAll('input');
+      let rad = document.querySelectorAll('[name=ani]');
+      // input의 name이 ani인 것들만
+      let p = document.querySelector('p');
+
+      rad.forEach(element => {
+        element.addEventListener('change', e=>{
+
+          if(e.currentTarget.checked){
+            p.textContent = e.currentTarget.value;
+          } else {
+            p.textContent = '';
+          }
+        })
+        
+      });
+    </script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <title>Document</title>
+  <style>
+    body {
+      margin: 30px;
+    }
+    p {
+      font-size: 50px;
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <input type="checkbox" name="chk">
+    체크(checked가 true)면 시간 가동<br>
+    체크해제(checked가 fasle)면 시간 중지
+  </div>
+  <p>카운트 : 0</p>
+  <script>
+    'use strict';
+    let cnt = 0;
+    let timer = null;
+    let chk = document.querySelector('input');
+    let p = document.querySelector('p');
+    // let isplay = true;
+    p.textContent = `카운트 : ${cnt} `;
+
+    function make(){
+      cnt++;
+      p.textContent = `카운트 : ${cnt} `;
+    }
+    
+    chk.addEventListener('change', e=>{
+    if(chk.checked){
+      console.log(chk.checked)
+      timer = setInterval(make, 1000);
+      isplay = true;
+    } else {
+      clearInterval(timer);
+      isplay=false;
+    }
+  })
+
+
+
+
+  </script>
+  <pre>
+
+    </pre>
+</body>
+
+</html>

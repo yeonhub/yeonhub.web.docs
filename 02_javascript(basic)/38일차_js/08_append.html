@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <title>Document</title>
+  <style>
+    body {
+      margin: 30px;
+    }
+
+    ul {
+      margin-top: 10px;
+    }
+
+    li {
+      width: 250px;
+      line-height: 40px;
+      border: 1px solid #000;
+      text-indent: 10px;
+      margin-bottom: 5px;
+    }
+  </style>
+</head>
+
+<body>
+  <input type="text" class="text">
+  <button>추가</button>
+  <ul>
+    <!-- <li>xxx</li> -->
+  </ul>
+
+  <script>
+    'use strict';
+    let inp = document.querySelector('input');
+    let ul = document.querySelector('ul');
+    let li = '';
+    let btn = document.querySelector('button');
+    let txt = '';
+
+    btn.addEventListener('click', e => {
+      txt = inp.value;
+      inp.value = '';
+      li = document.createElement('li')
+      li.textContent = txt;
+      ul.append(li);
+      inp.focus();
+    })
+  </script>
+</body>
+
+</html>
