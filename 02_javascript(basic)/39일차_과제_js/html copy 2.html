@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <title>Document</title>
+<style>
+    
+</style>
+</head>
+<body>
+  <div class="container">
+    <div class="list-container">
+      <h2>Left List</h2>
+      <ul class="left-list">
+        <li>
+          <p>Item 1</p>
+          <button class="add-button">ADD</button>
+        </li>
+        <li>
+          <p>Item 2</p>
+          <button class="add-button">ADD</button>
+        </li>
+        <li>
+          <p>Item 3</p>
+          <button class="add-button">ADD</button>
+        </li>
+      </ul>
+    </div>
+    <div class="list-container">
+      <h2>Right List</h2>
+      <ul class="right-list">
+      </ul>
+    </div>
+  </div>
+  
+    <script>
+const addButtons = document.querySelectorAll('.add-button');
+const oriButtons = document.querySelectorAll('.ori-button');
+const leftList = document.querySelector('.left-list');
+const rightList = document.querySelector('.right-list');
+
+addButtons.forEach((button) => {
+  button.addEventListener('click', () => {
+    const listItem = button.parentNode;
+    rightList.appendChild(listItem);
+    button.innerText = "ORI";
+    button.classList.remove('add-button');
+    button.classList.add('ori-button');
+    // 오리지널 버튼에도 클릭 이벤트 리스너 추가
+    const oriButton = listItem.querySelector('.ori-button');
+    oriButton.addEventListener('click', () => {
+      const oriListItem = oriButton.parentNode;
+      leftList.appendChild(oriListItem);
+      oriButton.innerText = "ADD";
+      oriButton.classList.remove('ori-button');
+      oriButton.classList.add('add-button');
+      // ADD 버튼에도 클릭 이벤트 리스너 추가
+      const addButton = oriListItem.querySelector('.add-button');
+      addButton.addEventListener('click', () => {
+        const addListItem = addButton.parentNode;
+        rightList.appendChild(addListItem);
+        addButton.innerText = "ORI";
+        addButton.classList.remove('add-button');
+        addButton.classList.add('ori-button');
+        // 오리지널 버튼에도 클릭 이벤트 리스너 추가
+        const oriButton = addListItem.querySelector('.ori-button');
+        oriButton.addEventListener('click', () => {
+          const oriListItem = oriButton.parentNode;
+          leftList.appendChild(oriListItem);
+          oriButton.innerText = "ADD";
+          oriButton.classList.remove('ori-button');
+          oriButton.classList.add('add-button');
+        });
+      });
+    });
+  });
+});
+
+// 오리지널 버튼에 클
+
+    </script>
+</body>
+</html>

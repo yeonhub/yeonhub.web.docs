@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <title>Document</title>
+<style>
+  button {
+    font-weight: 700;
+    border: 2px solid #000;
+    margin-top: 10px;
+    
+  }
+    .box {
+      margin: 30px;
+      display: flex;
+    }
+    .box .left, .right {
+      width: 500px;
+      height: 600px;
+      border: 3px solid #000;
+      box-sizing: border-box;
+    }
+    .box .left {
+      border-right: none;
+    }
+    .box .right {
+      width: 400px;
+      height: 600px;
+    }
+    .box h2 {
+      font-size: 30px;
+      margin: 10px;
+      text-align: center;
+    }
+    .box ul {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 20px;
+    }
+    .box ul li {
+      width: 132px;
+      height: 220px;
+      margin: 10px;
+      padding: 10px;
+      border: 3px solid #000;
+      box-sizing: border-box;
+    }
+    .box ul li img {
+      width: 100px;
+    }
+    .box ul li p {
+      text-align: center;
+      font-size: 18px;
+    }
+    .box ul li button {
+      padding: 10px;
+    }
+    .left {
+      background: lightblue;
+    }
+    .right {
+      background: lightgray;
+    }
+    .right .clean{
+      padding: 15px;
+      font-size: 15px;
+      margin-left: 50px;
+      margin: 0 35px;
+      }
+    .right .back {
+      padding: 15px;
+      font-size: 15px;
+      margin: 0 0px;
+    }
+    .box .right li {
+      margin: 2px 20px;
+    }
+</style>
+</head>
+<body>
+  <div class="box">
+    <div class="left">
+      <h2>상품리스트</h2>
+      <div class="list">
+        <ul>
+          <li>
+            <img src="images/img0.png" alt="">
+            <p>상품 : 뽀로로</p>
+            <button class="add">담기</button>
+            <button class="del">삭제</button>
+          </li>
+          <li>
+            <img src="images/img1.png" alt="">
+            <p>상품 : 악어</p>
+            <button class="add">담기</button>
+            <button class="del">삭제</button>
+          </li>
+          <li>
+            <img src="images/img2.png" alt="">
+            <p>상품 : 펭구</p>
+            <button class="add">담기</button>
+            <button class="del">삭제</button>
+          </li>
+          <li>
+            <img src="images/img3.png" alt="">
+            <p>상품 : 루피</p>
+            <button class="add">담기</button>
+            <button class="del">삭제</button>
+          </li>
+          <li>
+            <img src="images/img4.png" alt="">
+            <p>상품 : 누렁이</p>
+            <button class="add">담기</button>
+            <button class="del">삭제</button>
+          </li>
+          <li>
+            <img src="images/img5.png" alt="">
+            <p>상품 : 곰</p>
+            <button class="add">담기</button>
+            <button class="del">삭제</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="right">
+      <h2>장바구니</h2>
+      <button class="clean">장바구니 비우기</button>
+      <button class="back">상품리스트로</button>
+      <ul>
+      </ul>
+    </div>
+  </div>
+    <script src="js.js">
+      'use strict';
+
+    </script>
+</body>
+</html>
