@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <style>
+        .wing { position: absolute; left: -200px; top: 100px; width: 200px; transition: 0.5s; background: beige; box-sizing: border-box; padding: 25px;}
+        .wing.on { left:0 }
+
+        .wing h2 { font-size: 25px; text-align: center;  margin-bottom: 10px; }
+        .wing ul {}
+        .wing ul li {}
+        .wing ul li a {display: block; text-align: center; line-height: 40px;border-bottom: 1px solid rgba(0,0,0,0.2);}
+        .wing .close { position: absolute; display: block; width: 40px; height: 40px; right: -40px; top: 0px; background: #efefef; text-align: center; cursor: pointer; }
+        .wing .close i { font-size: 18px; line-height: 40px; }
+    </style>
+</head>
+<body>
+    
+    <div class="wing">
+        <h2>광고</h2>
+        <ul>
+            <li><a href="#">Menu1</a></li>
+            <li><a href="#">Menu2</a></li>
+            <li><a href="#">Menu3</a></li>
+            <li><a href="#">Menu4</a></li>
+        </ul>
+        <span class="close"><i class="xi-angle-right"></i> </span>
+    </div> 
+
+    <script>
+         const wing = document.querySelector('.wing');
+         const close = document.querySelector('.wing .close');
+         const closei = document.querySelector('.wing .close i');
+         let isplay = wing.classList.contains('on') ; //클래스 유무 contains
+
+         close.addEventListener( 'click' , e => {
+            isplay = wing.classList.contains('on');
+            if( isplay ) {
+                wing.classList.remove('on');
+                closei.classList.replace('xi-angle-left', 'xi-angle-right');
+            }else {
+                wing.classList.add('on');
+                closei.classList.replace('xi-angle-right', 'xi-angle-left');
+            }          
+         })
+        
+    </script>
+</body>
+</html>
