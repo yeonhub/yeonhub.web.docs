@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <title>Document</title>
+  <style>
+    body {
+      margin: 30px;
+    }
+  </style>
+</head>
+
+<body>
+  <button>재선언1</button>
+  <button>재선언2</button>
+  <script>
+    'use strict';
+    let button = document.querySelectorAll('button');
+
+    let a = 10;
+
+    button[0].addEventListener('click', e=>{
+      a = 20;
+    })
+
+    setInterval(() => {
+      console.log(a); 
+      console.log(`------`); 
+    }, 1000);
+
+
+    // let b = 200;
+
+    // button[1].addEventListener('click', e=>{
+    //    b = 100;
+    //    b = 500;
+
+
+    //   setInterval(() => {
+    //     console.log(`위 : ${b}`); 
+    //   }, 1000);
+
+
+    // })
+
+    // setInterval(() => {
+    //   console.log(`아래 : ${b}`); 
+    //   console.log(`------`); 
+    // }, 1000);
+
+    let c = 0;
+
+    const make = () => {
+      c = 100;
+    }
+    console.log(c);
+
+    make();
+
+    console.log(c);  
+  </script>
+</body>
+
+</html>

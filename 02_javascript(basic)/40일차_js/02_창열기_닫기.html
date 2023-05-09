@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <title>Document</title>
+  <style>
+
+  </style>
+</head>
+
+<body>
+  <script>
+    'use strict';
+    window.open('http://www.google.com')
+
+    // 2초 후에 열기(콜백함수)
+    setTimeout(() => {
+      window.open('http://www.google.com')
+    }, 2000);
+
+
+    setTimeout(() => {
+      window.open('http://www.google.com', '', 'width=300, height=400')
+    }, 3000);
+
+
+  </script>
+  <pre>
+    window.open('url')
+    window.open('url', 'name', 'option')
+    변수 = window.open('url', 'name', 'option')
+    
+    window.close()
+    변수.close()
+  </pre>
+</body>
+
+</html>
