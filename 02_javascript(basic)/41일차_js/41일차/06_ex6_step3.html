@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <style>
+        .tab-box {  margin: 30px auto;  width: 500px; }
+        .tab-box .tab {  display: flex;}
+        .tab-box .tab li a {  display: inline-block;  width: 100px;  text-align: center;  padding: 8px 0;  color: #333;
+          border-radius: 4px 4px 0 0;   background: beige;    }
+        
+          .tab-box .tab li a.on {   background:  #333; color: #fff;    }
+
+        .tab-box .tab li a:not(.on):hover {  opacity: .5;  transition: opacity .4s;    }
+        .tab-box .con-box {}
+        .tab-box .con-box .content {  display: none;  }        
+        .tab-box .con-box .content.on {  background:  #333;  color: #fff; min-height: 150px; padding: 12px;  display: block; }        
+    </style>
+</head>
+<body>
+    <div class="tab-box">
+        <ul class="tab">
+          <li><a href="#about" class="on">about</a></li>
+          <li><a href="#service">service</a></li>
+          <li><a href="#contact">content</a></li>
+        </ul>
+
+
+        <div class="con-box">
+            <div class="content on" id="about">
+                사랑의 생명을 같은 같이 커다란 예가 있으랴? 전인 있는 되려니와, 곳이 낙원을 것이다.
+            </div>
+        
+            <div class="content" id="service">
+                언덕 애기 새워 위에도 별 멀리 거외다. 흙으로 노루, 어머니 봅니다. 부끄러운 걱정도 너무나 아이들의 내린 말 별이 있습니다.
+            </div>
+        
+            <div class="content" id="contact">
+                옥 별이 멀듯이, 어머니, 불러 지나가는 이런 듯합니다. 릴케 못 어머니 남은 까닭입니다. 딴은 나는 계절이 어머니 오면 봅니다. 그리워 오는 까닭이요, 책상을 이름과, 어머니, 별 이름을 추억과 봅니다. 소녀들의 별에도 내 사랑과 계십니다.
+            </div>
+        </div>
+      </div>
+
+
+    <script>
+         // DOM 등록
+	var el = document.querySelector(".tab-box");
+	var btnas = el.querySelectorAll(".tab li a");
+	var boxs = el.querySelectorAll(".content");
+
+	// event 연결
+	for (var i = 0; i < btns.length; i++) {
+		//addEventListener를 이용하여 hoisting 방지
+		btns[i].addEventListener("click", activateBox);
+	}
+
+	// 함수 정의
+	function activateBox(e) {
+		e.preventDefault();
+        console.log( this )
+		var thisID = this.querySelector("a").getAttribute("href");
+		thisID = thisID.split("#")[1];
+
+		for (var k = 0; k < btns.length; k++) {
+			btns[k].classList.remove("on");
+
+			if (boxs[k].getAttribute("id") == thisID) {
+				boxs[k].classList.add("on");
+			} else {
+				boxs[k].classList.remove("on");
+			}
+		}
+		this.classList.add("on");
+	}
+    </script>
+</body>
+</html>
