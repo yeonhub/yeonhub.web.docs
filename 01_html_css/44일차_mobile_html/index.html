@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+	<style>
+		#wrap {
+			width: 100%;
+		}
+
+		#header {
+			width: 100%;
+			height: 27.7778vw;
+			background: #fce4ec;
+		}
+
+		#visual {
+			width: 100%;
+			height: 83.3333vw;
+			background: #f48fb1;
+		}
+
+		#container {}
+
+		#content {
+			display: flex;
+			flex-wrap: wrap;
+		}
+
+		.main {
+			width: 100%;
+		}
+
+		/* 너비 (자신너비/부모너비)/100 */
+		/* 100%/2 = 50% */
+		.main article {
+			width: 50%;
+			height: 41.6667vw;
+		}
+
+		.main article:nth-child(1) {
+			background: #ba68c8;
+		}
+
+		.main article:nth-child(2) {
+			background: #ab47bc;
+		}
+
+		.main article:nth-child(3) {
+			background: #e1bee7;
+		}
+
+		.main article:nth-child(4) {
+			background: #9c27b0;
+		}
+
+		.main article:nth-child(5) {
+			background: #8e24aa;
+		}
+
+		.main article:nth-child(6) {
+			background: #7b1fa2;
+		}
+
+		.main article:nth-child(7) {
+			background: #6a1b9a;
+		}
+
+		.main article:nth-child(8) {
+			background: #4a148c;
+		}
+
+		#footer {
+			width: 100%;
+			height: 141.6667vw;
+			background: lightblue;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="wrap">
+		<header id="header"></header>
+		<section id="visual"></section>
+		<main id="container" class="main">
+			<section id="content">
+				<article></article>
+				<article></article>
+				<article></article>
+				<article></article>
+				<article></article>
+				<article></article>
+				<article></article>
+				<article></article>
+			</section>
+		</main>
+		<footer id="footer"></footer>
+	</div>
+</body>
+
+</html>
