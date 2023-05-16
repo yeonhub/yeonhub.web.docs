@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <style>
+        body {
+            font-size: 10px;
+        }
+        body .box1 {
+            /* rem : 최상위 html(부모X) 기준 */
+            /* 반응형 단위 rem 처리 */
+            font-size: 1.6em;
+        }
+        body .box1 .box2 {
+            font-size: 2rem;
+        }
+        body .box1 .box2 .box3 {
+            font-size: 2rem;
+        }
+        body .box1 .box2 .box3 .box4 {
+            font-size: 2.5rem;
+        }
+        body .box1 .box2 .box3 .box4 .box5 {
+            font-size: 3rem;
+        }
+        body .con-box {
+            display: flex;
+        }
+        body .con-box .box {
+            width: 50%;
+            height: 20rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 3rem;
+        }
+        body .con-box .box:first-child {
+            background: lightcoral;
+        }
+        body .con-box .box:last-child {
+            background: lightseagreen;
+        }
+    </style>
+</head>
+<body>
+    <div class="con-box">
+        <div class="box">test</div>
+        <div class="box">test</div>
+    </div>
+    <div class="box1">
+        단위 1
+        <div class="box2">
+            단위 2
+            <div class="box3">
+                단위 3
+                <div class="box4">
+                    단위 4
+                    <div class="box5">
+                        단위 5
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js" src="js/app.js">
+        var swiper = new Swiper(".mySwiper", {});
+    </script>
+</body>
+
+</html>

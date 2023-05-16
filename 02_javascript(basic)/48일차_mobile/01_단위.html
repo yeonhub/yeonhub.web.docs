@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <style>
+        body {
+            font-size: 60px;
+        }
+        body .box1 {
+            /* 1em : 부모를 기준으로 100% */
+            /* 모바일, 반응형 폰트 단위 : em */
+            /* 최근 모바일 단위를 px로 작업 많이 함 단, 기종별 해상도 문제 발생 */
+            font-size: 1em;
+        }
+        body .box1 .box2 {
+            font-size: 0.8em;
+        }
+        body .box1 .box2 .box3 {
+            font-size: 0.8em;
+        }
+        body .box1 .box2 .box3 .box4 {
+            font-size: 0.8em;
+        }
+        body .box1 .box2 .box3 .box4 .box5 {
+            font-size: 0.8em;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1">
+        단위 1
+        <div class="box2">
+            단위 2
+            <div class="box3">
+                단위 3
+                <div class="box4">
+                    단위 4
+                    <div class="box5">
+                        단위 5
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js" src="js/app.js">
+        var swiper = new Swiper(".mySwiper", {});
+    </script>
+</body>
+
+</html>
