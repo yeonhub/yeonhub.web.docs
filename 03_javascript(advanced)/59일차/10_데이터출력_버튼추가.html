@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<style>
+    .box {
+        width: 600px;
+        margin: 20px auto;
+    }
+
+    .box table {
+        width: 100%;
+    }
+
+    .w1 {
+        width: 10%;
+    }
+
+    .w2 {
+        width: 20%;
+    }
+
+    .w3 {
+        width: auto;
+    }
+
+    .w4 {
+        width: 30%;
+    }
+
+    .w5 {
+        width: 30%;
+    }
+
+    th {
+        border: 1px solid #000;
+    }
+
+    .box th,
+    .box td {
+        border: 1px solid #000;
+        height: 40px;
+        text-align: center;
+        vertical-align: middle;
+    }
+
+    .box th {
+        border-bottom-width: 3px;
+    }
+
+    .box tbody tr:nth-child(odd) td {
+        background: lightblue;
+    }
+
+    .box tbody tr:nth-child(even) td {
+        background: lightpink;
+    }
+
+    button {
+        color: white;
+        background: #000;
+        width: 80px;
+    }
+
+    .btn {
+        margin-top: 20px;
+    }
+</style>
+
+<body>
+    <div class="box">
+        <table>
+            <caption>학생명단</caption>
+            <colgroup>
+                <col class="w1">
+                <col class="w2">
+                <col class="w3">
+                <col class="w4">
+                <col class="w5">
+            </colgroup>
+            <thead>
+                <tr>
+                    <th>번호</th>
+                    <th>이름</th>
+                    <th>나이</th>
+                    <th>주소</th>
+                    <th>관리</th>
+                </tr>
+            </thead>
+            <tbody class="table-tbody">
+                <!-- 생성후 데이터 출력 -->
+            </tbody>
+        </table>
+        <div class="btn">
+            <button class="allDel">전체 삭제</button>
+            <button class="allRe">전체 복구</button>
+        </div>
+    </div>
+    <script>
+        const tbody = document.querySelector('.table-tbody')
+        const allDel = document.querySelector('.allDel')
+        const allRe = document.querySelector('.allRe')
+        let tableDel = document.querySelectorAll('.tableDel')
+        fetch('./data/data3.json')
+            .then(res => res.json())
+            .then(data => {
+                function make() {
+                    tbody.innerHTML = ""
+                    for (let i = 0; i < data.item.length; i++) {
+                        let tr = document.createElement('tr')
+                        let td = document.createElement('td')
+                        td.textContent = data.item[i].id
+                        tr.append(td)
+                        td = document.createElement('td')
+                        td.textContent = data.item[i].name
+                        tr.append(td)
+                        td = document.createElement('td')
+                        td.textContent = data.item[i].age
+                        tr.append(td)
+                        td = document.createElement('td')
+                        td.textContent = data.item[i].addr
+                        tr.append(td)
+                        td = document.createElement('td')
+                        td.innerHTML = '<button class="tableDel">삭제</button>'
+                        tr.append(td)
+                        tbody.append(tr)
+                        del();
+                    }
+                }
+                function del(){
+                    tableDel = document.querySelectorAll('.tableDel')
+                    tableDel.forEach(del => {
+                        del.addEventListener('click', e => {
+                            e.target.parentElement.parentElement.remove();
+                        })
+                    })
+                }
+                allDel.addEventListener('click', e => {
+                    tbody.innerHTML = ""
+                })
+                allRe.addEventListener('click', e => {
+                    make();
+                })
+                make();
+                del();
+            })
+    </script>
+</body>
+
+</html>

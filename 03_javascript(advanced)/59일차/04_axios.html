@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+    <script>
+        axios.get('./data/data1.json')
+        .then(res=>console.log(res.data))
+    </script>
+    <pre>
+        axios.get('url',옵션)
+        .then(응답완료=>응답완료 값)
+    </pre>
+</body>
+
+</html>
