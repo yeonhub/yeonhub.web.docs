@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<style>
+
+</style>
+<body>
+
+    <script>
+searchBtn.addEventListener('click', e => {
+  keyward = search.value;
+  url = `https://pixabay.com/api/?key=26707644-4a04d951c96de12073eaa7e9b&q=${keyward}&image_type=photo`;
+  fetch(url)
+  .then(res => res.json())
+  .then(res => {
+      show(res.hits);
+    })
+  .catch(error => {
+      console.error(error);
+    });
+});
+
+function show(data) {
+  conBox.innerHTML = '';
+  for (let i = 0; i < data.length; i++) {
+    let tages = data[i].tags.split(',');
+    conBox.innerHTML += `
+      <article>
+        <div>
+          <img src="${data[i].largeImageURL}" alt="">
+        </div>
+        <h3>${data[i].user}</h3>
+        <ul>
+          <li><span>view</span>:<em>${data[i].views}</em></li>
+          <li><span>download</span>:<em>${data[i].downloads}</em></li>
+          <li><span>like</span>:<em>${data[i].likes}</em></li>
+        </ul>
+        <p>
+          <span>#${tages[0]}</span>
+          <span>#${tages[1]}</span>
+          <span>#${tages[2]}</span>
+        </p>
+      </article>
+    `;
+  }
+}
+    </script>
+</body>
+
+</html>
+
+

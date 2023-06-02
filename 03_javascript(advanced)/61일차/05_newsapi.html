@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<style>
+    body {
+        margin: 30px;
+    }
+    .inner {
+        display: flex;
+        flex-wrap: wrap;
+        width: 1800px;
+    }
+    .inner article {
+        margin: 50px;
+        width: 500px;
+        height: 600px;
+        border: 1px solid #000;
+        box-sizing: border-box;
+        padding: 20px;
+        overflow: hidden;
+    }
+    .inner article h2 {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+    .inner article img {
+        width: 100%;
+    }
+    .inner article p {
+        font-size: 20px;
+        margin-top: 20px;
+    }
+</style>
+<body>
+    <main id="container" class="news">
+        <section id="content">
+            <div class="inner">
+                <!-- <article>
+                    <a href="">
+                        <h2>타이틀</h2>
+                        <img src="" alt="">
+                        <p></p>
+                    </a>
+                </article> -->
+            </div>
+        </section>
+    </main>
+    <script>
+        const article = document.querySelector('.inner')
+        const url = 'https://newsapi.org/v2/top-headlines?country=kr&apiKey=646d8fd2d05d4d8e8d089a9fef0eb987'
+        fetch(url)
+        .then(res=>res.json())
+        .then(res=>{
+            console.log(res.articles);
+            listIn(res.articles)
+        })
+
+        function listIn(data) {
+            for (let i = 0; i < data.length; i++) {
+                article.innerHTML += `
+                    <article>
+                    <a href="${data[i].url}}">
+                        <h2>${data[i].title}</h2>
+                        <img src="${data[i].urlToImage}" alt="">
+                        <p>${data[i].description}</p>
+                    </a>
+                </article>
+                `
+            }
+        }
+    </script>
+</body>
+
+</html>
