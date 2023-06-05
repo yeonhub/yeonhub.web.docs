@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <style>
+        .box {
+            width: 1400px;
+            margin: auto;
+            height: 200px;
+            background: lightcoral;
+        }
+
+        /* pc 기준 */
+        /* 0 ~ 1200만 인식 */
+        @media screen and (max-width:1200px) {
+            .box {
+                width: 90%;
+                background: lightsalmon;
+            }
+        }
+
+        /* 0 ~ 1023 반드시 우선순위가 동일해야 함 */
+        @media screen and (max-width:1023px) {
+            .box {
+                /* 너비는 상속 */
+                background: lime;
+            }
+        }
+        @media screen and (max-width:767px) {
+            .box {
+                width: 100%;
+                background: lightskyblue;
+                height: 150px;
+            }
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <div class="box"></div>
+
+</body>
+
+</html>
