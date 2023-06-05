@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<style>
+
+</style>
+
+<body>
+
+  <script type="module">
+    // default는 import시 { } 사용 금지
+    import make3, { num, make1, make2, Person, obj, arr } from "./module/test3.js";
+    console.log(num);
+    console.log(make1);
+    console.log(make1());
+    console.log(make2);
+    console.log(make2(10, 30));
+    const man = new Person()
+    man.name = '박'
+    console.log(Person);
+    console.log(man.name);
+    console.log(obj);
+    console.log(obj.addr);
+    console.log(arr);
+    console.log(arr[3]);
+    console.log(make3);
+    console.log(make3(10, 20));
+  </script>
+</body>
+
+</html>
