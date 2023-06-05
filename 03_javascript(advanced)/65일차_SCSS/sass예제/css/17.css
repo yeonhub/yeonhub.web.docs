@@ -1,0 +1,14 @@
+.con-box div {
+  background: tan;
+  margin-bottom: 10px;
+}
+.con-box div:first-child {
+  width: 400px;
+}
+.con-box div:last-child {
+  width: 466.6666666667px;
+}
+
+p::after {
+  content: "HELLOSCSS99800px";
+}

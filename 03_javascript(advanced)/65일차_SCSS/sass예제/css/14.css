@@ -1,0 +1,9 @@
+header p::before {
+  content: "HELLO";
+  text-align: 40px;
+}
+
+footer p::after {
+  content: "BYE";
+  text-align: 40px;
+}

@@ -1,0 +1,21 @@
+@mixin bg($w, $h, $bb...){
+    border: 1px solid #000;
+    width: $w;
+    height: $h;
+    background: $bb;
+
+}
+@mixin make($w, $h){
+    border: 1px solid #000;
+    width: $w;
+    height: $h;
+}
+.box1 {
+    @include make(300px, 100px)
+}
+.box2 {
+    @include bg(300px, 300px, url(../images/img0.jpg))
+}
+p {
+    @include bg(300px, 300px, url(../images/img0.jpg),repeat);
+}

@@ -1,0 +1,20 @@
+.list {
+  margin: 30px;
+}
+.list li {
+  width: 300px;
+  margin-bottom: 10px;
+  transition: 0.3s;
+}
+.list li a {
+  display: block;
+  text-align: center;
+  list-style: 45px;
+  border: 1px solid #000;
+}
+.list li:hover {
+  background: tan;
+}
+.wrap .list li {
+  background: lightblue;
+}

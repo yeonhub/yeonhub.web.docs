@@ -1,0 +1,35 @@
+h1 {
+    color: tan;
+    background: gray;
+    padding: 15px;
+    font : {
+        family : '궁서체';
+        size : 30px;
+        weight : 700;
+        style : italic;
+    }
+}
+.wrap {
+    width: 600px;
+    height: 300px;
+    margin: 50px auto;
+    border: 1px solid #000;
+    background : {
+        color : 'lightgreen';
+        image : url(../images/img0.jpg);
+        size : cover;
+        repeat : no-repeat;
+        position: 0 0;
+    };
+    .box {
+        text-align: center;
+    }
+    p {
+        font : 30px/50px "굴림체" {
+            weight : 700;
+            style : italic;
+        }
+        background-color: lightcyan;
+        padding: 20px;
+    }
+}

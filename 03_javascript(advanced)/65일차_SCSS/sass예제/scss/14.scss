@@ -1,0 +1,14 @@
+$con1 : "HELLO";
+
+header {
+    p::before {
+        content : $con1;
+        text-align: 40px;
+    }
+}
+footer {
+    p::after {
+        content : 'BYE';
+        text-align: 40px;
+    }
+}

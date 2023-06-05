@@ -1,0 +1,23 @@
+.con-box {
+    display: flex;
+    margin: 30px;
+
+    .box {
+        height: 200px;
+        line-height: 100%;
+        text-align: center;
+
+        &-small {
+            width: 100px;
+            background: lightcoral;
+        }
+        &-middle {
+            width: 200px;
+            background: lightblue;
+        }
+        &-big {
+            width: 300px;
+            background: lightgreen;
+        }
+    }
+}

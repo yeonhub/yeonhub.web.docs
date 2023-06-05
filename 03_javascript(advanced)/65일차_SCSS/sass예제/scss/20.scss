@@ -1,0 +1,16 @@
+@mixin make($w, $br, $color) {
+    border: 1px solid #000;
+    width: $w;
+    border-radius: $br;
+    background: $color;
+    text-align: center;
+    margin-right: 15px;
+}
+
+ul {
+    display: flex;
+    margin: 30px;
+    li {
+        @include make(300px, 10px, tan)
+    }
+}

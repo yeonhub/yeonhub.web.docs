@@ -1,0 +1,15 @@
+.list {
+    width: 600px;
+    height: 200px;
+    margin: 30px;
+    display: flex;
+    li {
+        width: 100px;
+        height: 100px;
+        text-align: center;
+        background: lightpink;
+        &.on {
+            background: tan;
+        }
+    }
+}

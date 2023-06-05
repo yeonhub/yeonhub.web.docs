@@ -1,0 +1,15 @@
+// 지역변수를 전역변수로 사용 가능
+$color : tomato;
+body {
+    font-size: 50px;
+}
+span {
+    color: $color;
+}
+h1 {
+    $color : skyblue !global;
+    color: $color;
+}
+p {
+    color: $color;
+}

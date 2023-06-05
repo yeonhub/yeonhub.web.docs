@@ -1,0 +1,36 @@
+.nav {
+  width: 1000px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.nav li a {
+  font-size: 25px;
+  display: block;
+  padding: 20px;
+  background: tan;
+  transition: 0.3s;
+}
+.nav li a:hover {
+  background: lightblue;
+  padding: 30px;
+}
+.nav li:active a {
+  background: lightcoral;
+  color: white;
+  border: 1px solid #000;
+}
+
+.btn-wrap button {
+  border: none;
+  width: 150px;
+  height: 40px;
+  transition: 0.3s;
+}
+.btn-wrap button.on {
+  background: lightgreen;
+  color: white;
+}
+.btn-wrap button:hover {
+  background: lightseagreen;
+}
