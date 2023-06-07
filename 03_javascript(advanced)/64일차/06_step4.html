@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <style>
+        body {
+            margin: 30px;
+        }
+
+        li {
+            margin: 10px;
+            width: 150px;
+            border-bottom: 1px solid #000;
+        }
+
+        span {
+            display: block;
+            margin: 10px;
+            /* width: 160px; */
+            font-size: 30px;
+            color: red;
+            text-align: center;
+            background: lightblue;
+        }
+
+        li {
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <input type="text">
+        <button class="btn">추가</button>
+    </div>
+    <p></p>
+    <ul class="output">
+        <!-- <li>값</li> -->
+    </ul>
+
+    <script>
+        let btn = document.querySelector('.btn')
+        let txt = document.querySelector('input')
+        let out = document.querySelector('.output')
+        let p = document.querySelector('p')
+        let delBtns = document.querySelectorAll('li button')
+        let obj = [
+            // { id: 1, text: 'a' },
+            // { id: 2, text: 'b' },
+            // { id: 3, text: 'c' }
+        ]
+        // id 사용시 변수
+        let no = obj.length;
+
+        // localStorage.clear();
+        obj = JSON.parse(localStorage.getItem("obj")) || []
+
+        // del
+        const delShow = (delBtn, id) => {
+            delBtn.addEventListener('click', e => {
+                obj = obj.filter(item => item.id != id)
+                localStorage.setItem("obj", JSON.stringify(obj))
+                show()
+            })
+        }
+
+
+        // 출력
+        const show = () => {
+            out.innerHTML = ''
+            obj.forEach(ele => {
+                // 비구조할당
+                const { id, text } = ele
+                let li = document.createElement('li');
+                let delBtn = document.createElement('button');
+                delBtn.textContent = `DEL`
+                li.textContent = `${id} / ${text}`
+                li.append(delBtn)
+                out.append(li)
+
+                delShow(delBtn, id)
+            })
+            txt.value = ''
+            txt.focus();
+        }
+        show()
+
+        // 추가
+        const add = () => {
+            obj = [
+                ...obj,
+                {
+                    id: ++no,
+                    text: txt.value
+                }
+            ]
+            localStorage.setItem("obj", JSON.stringify(obj))
+        }
+
+        btn.addEventListener('click', e => {
+            if (txt.value) {
+                add();
+                show();
+            }
+            console.log(delBtns);
+        })
+    </script>
+</body>
+
+</html>
