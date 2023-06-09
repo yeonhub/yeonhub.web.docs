@@ -1,0 +1,1 @@
+table caption 접근성용 hide class 적용 혹은 reset.css에 caption을 hide에 추가

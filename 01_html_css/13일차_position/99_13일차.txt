@@ -1,0 +1,13 @@
+1)1-2
+switch~case, if 같이 사용
+
+2)3-4
+isNaN
+        isNaN : 숫자인지 문자인지 판별
+        Not a Number
+        숫자, 공백 : fasle
+        문자 : true
+
+------------html css-------------
+3) 9 -11
+폰트 아이콘

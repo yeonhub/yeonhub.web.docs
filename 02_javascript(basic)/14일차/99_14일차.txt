@@ -1,0 +1,20 @@
+1) 1~9 
+for
+for 반복문
+
+2) 10-12
+select
+
+3)13-16
+이중for문
+
+4)17
+for+if
+
+5)18-19
+while
+
+6)do~while
+
+7)break
+

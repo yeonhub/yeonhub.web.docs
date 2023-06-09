@@ -1,0 +1,14 @@
+1) 마우스 이벤트
+click
+dblclick
+contextmenu
+mousedown
+mouseup
+mousemove
+mouseover
+mouseout
+mouseenter
+mouseleave
+over, out/enter, leave 차이
+
+2)
