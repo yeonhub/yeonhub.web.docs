@@ -1,5 +1,5 @@
 import React from 'react';
-import Main from './components/Main';
+import Main from './sample/Main';
 // import Test8step3 from './components/Test8step3';
 // import Test8step2 from './components/Test8step2';
 // import Test8 from './components/Test8';
@@ -26,7 +26,7 @@ const App = () => {
       {/* <Test8/> */}
       {/* <Test8step2 /> */}
       {/* <Test8step3/> */}
-      <Main />
+      <Main/>
     </div>
   );
 };
