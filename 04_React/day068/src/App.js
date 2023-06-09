@@ -1,25 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Main from './components/Main';
+// import Test8step3 from './components/Test8step3';
+// import Test8step2 from './components/Test8step2';
+// import Test8 from './components/Test8';
+// import Test7 from './components/Test7';
+// import Test6 from './components/Test6';
+// import Test5 from './components/Test5';
+// import './components/Test5.scss'
+// import Test4 from './components/Test4';
+// import Test3 from './components/Test3';
+// import Test2 from './components/Test2';
+// import './components/Test1.scss'
+// import Test1 from './components/Test1';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      {/* <Test1/> */}
+      {/* <Test2/> */}
+      {/* <Test3/> */}
+      {/* <Test4/> */}
+      {/* <Test5/> */}
+      {/* <Test6/> */}
+      {/* <Test7/> */}
+      {/* <Test8/> */}
+      {/* <Test8step2 /> */}
+      {/* <Test8step3/> */}
+      <Main />
     </div>
   );
-}
+};
 
 export default App;
