@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Setp4 = ({username}) => {
+const Step4 = ({username}) => {
     return (
         <>
             <h3>
@@ -11,4 +11,4 @@ const Setp4 = ({username}) => {
     );
 };
 
-export default Setp4;
+export default Step4;

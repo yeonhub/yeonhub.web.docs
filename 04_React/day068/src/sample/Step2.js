@@ -1,6 +1,7 @@
 import React from 'react';
 
-const Setp2 = ({job, email, gender, inter, changeInput}) => {
+const Step2 = ({user, changeInput, nextPage, prevPage}) => {
+    const {job, email, gender, inter} = user
     return (
         <>
             <p>
@@ -20,11 +21,11 @@ const Setp2 = ({job, email, gender, inter, changeInput}) => {
                 <input type='text' name='inter' value={inter} onChange={changeInput}/>
             </p>
             <p>
-                <button>다음</button>
-                <button>이전</button>
+                <button onClick={prevPage}>이전</button>
+                <button onClick={nextPage}>다음</button>
             </p>
         </>
     );
 };
 
-export default Setp2;
+export default Step2;

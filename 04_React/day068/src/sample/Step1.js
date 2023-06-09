@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Setp1 = ({username, age, addr, tel, changeInput}) => {
+const Step1 = ({data:{username, age, addr, tel}, changeInput, nextPage}) => {
     return (
         <>
             <p>
@@ -20,10 +20,10 @@ const Setp1 = ({username, age, addr, tel, changeInput}) => {
                 <input type='text' name='tel' value={tel} onChange={changeInput}/>
             </p>
             <p>
-                <button>다음</button>
+                <button onClick={nextPage}>다음</button>
             </p>
         </>
     );
 };
 
-export default Setp1;
+export default Step1;

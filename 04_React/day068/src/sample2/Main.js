@@ -37,13 +37,15 @@ const Main = () => {
     return (
         <div className='wrap'>
             {
-                page === 1 && <Step1 username={username} age={age} addr={addr} tel={tel} changeInput={changeInput} nextPage={nextPage} />
+                page === 1 && <Step1 user={user} changeInput={changeInput} nextPage={nextPage} />
             }
             {
-                page === 2 && <Step2 job={job} email={email} gender={gender} inter={inter} changeInput={changeInput} nextPage={nextPage} prevPage={prevPage}/>
+                // user 전체 넘겨주고 Step2에서 비구조할당으로 받기
+                page === 2 && <Step2 user={user} changeInput={changeInput} nextPage={nextPage} prevPage={prevPage}/>
             }
             {
-                page === 3 && <Step3 username={username} age={age} addr={addr} tel={tel} job={job} email={email} gender={gender} inter={inter} nextPage={nextPage} prevPage={prevPage} />
+                // 출력만 할 때
+                page === 3 && <Step3 {...user} nextPage={nextPage} prevPage={prevPage} />
             }
             {
                 page === 4 && <Step4 username={username} />
