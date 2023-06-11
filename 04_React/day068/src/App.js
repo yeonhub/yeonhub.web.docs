@@ -3,7 +3,7 @@ import Test9 from './components/Test9';
 // import Main from './sample2/Main';
 // import Test8step3 from './components/Test8step3';
 // import Test8step2 from './components/Test8step2';
-// import Test8 from './components/Test8';
+import Test8 from './components/Test8';
 // import Test7 from './components/Test7';
 // import Test6 from './components/Test6';
 // import Test5 from './components/Test5';
@@ -24,11 +24,11 @@ const App = () => {
       {/* <Test5/> */}
       {/* <Test6/> */}
       {/* <Test7/> */}
-      {/* <Test8/> */}
+      <Test8/>
       {/* <Test8step2 /> */}
       {/* <Test8step3/> */}
       {/* <Main/> */}
-      <Test9/>
+      {/* <Test9/> */}
     </div>
   );
 };

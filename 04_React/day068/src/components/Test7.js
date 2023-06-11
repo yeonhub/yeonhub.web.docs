@@ -17,7 +17,7 @@ const Test7 = () => {
     }
 
     return (
-        <div>
+        <div style={{margin:30}}>
             <Test7Name text={text} changeInput1={changeInput1}/>
             <hr/>
             <Test7Ani ani={ani} changeInput2={changeInput2}/>
