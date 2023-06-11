@@ -40,6 +40,7 @@
                     p {
                         display: flex;
                         justify-content: space-between;
+
                         em {
                             color: red;
                             font-size: 20px;
@@ -55,12 +56,14 @@
                             margin-right: 5px;
                         }
                     }
+
                     span {
                         display: block;
                         text-align: right;
                         font-size: 20px;
                         margin-right: 5px;
                     }
+
                     &::after {
                         content: attr(data-id);
                         position: absolute;
@@ -74,12 +77,14 @@
                         font-size: 18px;
                         line-height: 25px;
                     }
+
                     &:hover {
                         img {
-                            border: 2px solid navy;
+                            border: 3px solid navy;
                         }
-                        span {
-                            color: red;
+
+                        em {
+                            color: navy;
                         }
                     }
                 }
