@@ -89,6 +89,38 @@
                     }
                 }
             }
+
+            .info {
+                height: 1000px;
+                background: lightgray;
+
+                .gallery {
+                    width: 200px;
+                    height: 100px;
+                    background: lightcoral;
+
+                    .bigimg {}
+
+                    ul {
+                        .tn {
+                            width: 100px;
+                            height: 100px;
+                        }
+                    }
+                }
+
+                .menu {}
+
+                .con {
+                    .profile {}
+
+                    .stat {}
+
+                    .club {}
+
+                    .news {}
+                }
+            }
         }
     }
 }
