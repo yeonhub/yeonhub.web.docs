@@ -1,8 +1,8 @@
 import React from 'react';
 import './assets/css/reset.css'
 import Starbucks from './starbucks/Starbucks';
-// import Acc from './sample3/Acc';
-// import Tab from './sample2/Tab';
+import Acc from './sample3/Acc';
+import Tab from './sample2/Tab';
 // import Test1 from './sample/Test1';
 
 const App = () => {
@@ -10,7 +10,7 @@ const App = () => {
     <div>
       {/* <Test1/> */}
       {/* <Tab/> */}
-      {/* <Acc/> */}
+      <Acc/>
       <Starbucks/>
     </div>
   );

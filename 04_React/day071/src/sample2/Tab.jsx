@@ -8,7 +8,6 @@ const Tab = () => {
     const [data, setData] = useState(dataList)
     const [show, setShow] = useState(data[0])
     const on = id => {
-        // setShow(data[id-1])
         setShow(data.find(item => item.id === id))
         setData(data.map(item => item.id === id ? { ...item, isShow: true } : { ...item, isShow: false }))
     }

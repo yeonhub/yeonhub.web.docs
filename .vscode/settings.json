@@ -2,5 +2,6 @@
     "liveSassCompile.settings.showOutputWindowOn": "None",
     "emmet.includeLanguages": {
         "javascript": "javascriptreact"
-    }
+    },
+    "editor.formatOnSave": true
 }
