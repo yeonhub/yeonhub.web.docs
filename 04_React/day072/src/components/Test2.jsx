@@ -20,7 +20,7 @@ const Test2 = () => {
 
     // 화면에 그려지기 전 한번만
     // useEffect 안될 때 useLayoutEffect 사용
-    useEffect(() => {
+    useLayoutEffect(() => {
         console.log("useLayoutEffect")
         ref2.current.style.backgroundColor = 'tomato'
     })

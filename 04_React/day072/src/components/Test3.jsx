@@ -17,7 +17,7 @@ const Test3 = () => {
     // [] 대괄호 사용시 처음 한 번만
     return (
         <div>
-            <h2>useEffect 형식2</h2>
+            <h2>useEffect</h2>
             <input type="text" ref={textRef} value={text} onChange={changeInput}/>
         </div>
     );
