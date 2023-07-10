@@ -84,3 +84,27 @@
 .cart-box article p span {
     font-size: 18px;
 }
+
+.inner {}
+
+.inner .search {
+    display: flex;
+}
+
+.inner .search .sort {}
+
+.inner .search .sort select {
+    width: 150px;
+    height: 40px;
+    border: none;
+    background: lightgray;
+    box-sizing: border-box;
+    padding: 5px;
+}
+
+.inner .search .sort select:focus {
+    outline: none;
+    border: none;
+}
+
+.inner .search .sort {}

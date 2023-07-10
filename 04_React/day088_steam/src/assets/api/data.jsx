@@ -129,5 +129,31 @@ export const products = [
       move: '+40',
     },
   },
+  {
+    id: 11,
+    title: "Forza Horizon 5",
+    price: 29950,
+    description:
+      "환상적인 Horizon 어드벤처가 여러분을 기다리고 있습니다! 세계에서 내로라하는 자동차들을 타고 펼쳐지는 드라이빙 액션! 흥분의 도가니 속에서 끊임없이 진화하는 멕시코 오픈 월드를 질주해 보세요! 거친 Sierra Nueva를 정복하며 궁극의 호라이즌 렐리를 경험하세요.",
+    category: "레이싱",
+    image: "https://cdn.akamai.steamstatic.com/steam/apps/1551360/header.jpg?t=1688579271",
+    rating: {
+      rank: 11,
+      move: '-5',
+    },
+  },
+  {
+    id: 12,
+    title: "Marvel’s Spider-Man Remastered",
+    price: 42080,
+    description:
+      "Marvel’s Spider-Man Remastered의 오리지널 액션으로 꽉 찬 스토리에서 피터 파커와 스파이더맨의 세계가 서로 충돌합니다. 마블의 뉴욕시에서 거대 범죄 및 상징적인 빌런과 싸우는 노련한 피터 파커가 되어보세요. 생동감 넘치는 동네를 웹 스윙으로 이동하며, 극적인 테이크다운으로 악당을 제압하세요.",
+    category: "액션",
+    image: "https://cdn.akamai.steamstatic.com/steam/apps/1817070/header.jpg?t=1673999865",
+    rating: {
+      rank: 12,
+      move: '+14',
+    },
+  },
 
 ]
