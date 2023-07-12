@@ -9,7 +9,7 @@ const initialState = {
         { id: 3, title: '문의글 3번', name: '김만득', content: '3번 문의 내용', date: '2023-07-03' },
         { id: 4, title: '문의글 4번', name: '김만득', content: '4번 문의 내용', date: '2023-07-04' },
     ],
-    current: {}
+    user: {}
 }
 let no = 2
 
@@ -42,25 +42,9 @@ export const customerSlice = createSlice({
                 :
                 item)
         },
-        addSort(state, action) {
-            state.data.sort(function (a, b) {
-                if (a.id > b.id) {
-                    return 1;
-                }
-                if (a.id < b.id) {
-                    return -1;
-                }
-                return 0;
-            });
-        },
-        edit(state, action) {
-            state.current = action.payload
-        },
-        update(state, action) {
-            state.data = state.data.map(item => item.id === action.payload.id ? action.payload : item)
-        }
+        edit(state, action) { },
     }
 })
 
-export const { add, remove, edit, addSort ,update} = customerSlice.actions
+export const { add, remove, edit } = customerSlice.actions
 export default customerSlice.reducer

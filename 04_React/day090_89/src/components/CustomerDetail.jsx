@@ -19,6 +19,8 @@ const CustomerDetail = () => {
         dispatch(edit(customerItem))
         navigate('/customer/customeredit')
     }
+
+
     return (
         <div className="inner">
             <h2> {id}번 문의 </h2>

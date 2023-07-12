@@ -21,19 +21,18 @@ const CustomerAdd = () => {
     }
     const onSubmit = e => {
         e.preventDefault()
-        if (!name) {
+        if(!name){
             alert('작성자를 입력하세요')
             return
-        } else if (!title) {
+        } else if(!title){
             alert('제목을 입력하세요')
             return
-        } else if (!content) {
+        } else if(!content){
             alert('내용을 입력하세요')
             return
         }
         navigate('/customer')
         dispatch(add(user))
-        dispatch(addSort())
     }
 
     return (

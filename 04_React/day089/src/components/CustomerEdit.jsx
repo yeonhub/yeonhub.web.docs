@@ -1,10 +1,11 @@
 import { useState } from "react";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
-import { add } from '../store/modules/customerSlice'
+import { add, addSort, update } from '../store/modules/customerSlice'
 
 
-const CustomerAdd = () => {
+const CustomerEdit = () => {
+    const { current } = useSelector(state => state.customer)
     const [user, setUser] = useState({ name: '', title: '', content: '' })
     const { name, title, content, date } = user
     const navigate = useNavigate()
@@ -32,14 +33,13 @@ const CustomerAdd = () => {
             return
         }
         navigate('/customer')
-        dispatch(add(user))
-        dispatch(addSort())
+        dispatch(update(user))
     }
 
     return (
         <>
             <div className="inner">
-                <h2> 고객문의 </h2>
+                <h2> 고객문의 수정</h2>
                 <form className="customer-add" onSubmit={onSubmit}>
                     <p>  <input type="text" placeholder="제목" name="title" value={title} onChange={changeInput} /></p>
                     <p>  <input type="text" placeholder="작성자" name="name" value={name} onChange={changeInput} /></p>
@@ -56,4 +56,4 @@ const CustomerAdd = () => {
     );
 };
 
-export default CustomerAdd;
+export default CustomerEdit;

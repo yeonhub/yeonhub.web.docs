@@ -1,9 +1,0 @@
-1)1-2
-position: absolute;
--2 부모 박스 지정
-
-2)4
-position: fixed;
-
-3)5
-z-index
